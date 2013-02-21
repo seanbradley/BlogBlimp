@@ -1,0 +1,10 @@
+{'conditions': [
+{'bucket': 'blogblimp'},
+['starts-with', '$key', 'uploads/'],
+['starts-with', '$Filename', ''], 
+{'acl': 'private'},
+{'success_action_redirect': 'http://blogblimp.com/anydevice/anywhere/uploadsuccess.html'},
+['Content-Type': 'application/octet-stream'}
+],
+'expiration': '2013-01-01T00:00:00Z'
+}

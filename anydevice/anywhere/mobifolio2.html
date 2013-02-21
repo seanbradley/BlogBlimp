@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>BlogBlimp&mdash;Portfolio</title>   
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="dc.language" content="en" />
+    <meta name="geo.country" content="US" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" >
+    <meta name="description" content="Let BlogBlimp gently float your website to a whole new level." />
+    <meta name="robots" content="index, follow" />
+
+    <script src="http://awesome.blogblimp.com/scripts/jquery-1.6.3.min.js"></script>
+    <script src="http://awesome.blogblimp.com/scripts/klass.min.js"></script>
+    <script src="http://awesome.blogblimp.com/scripts/code.photoswipe-3.0.4.min.js"></script>
+    <script>
+        (function(window, PhotoSwipe){
+	    document.addEventListener('DOMContentLoaded', function(){
+		var
+		    options =  {
+			getImageMetaData: function(el){
+			    return {
+				relatedUrl: el.getAttribute('data-related-url')
+				}
+			 }
+		     },
+		     instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), options );
+		     instance.addEventHandler(PhotoSwipe.EventTypes.onTouch, function(e){
+		 if (e.action === 'tap'){
+		     var currentImage = instance.getCurrentImage();
+			 window.open(currentImage.metaData.relatedUrl);
+		     }
+		 });
+	     }, false);
+	}(window, window.Code.PhotoSwipe));
+    </script>
+
+    <link rel="stylesheet" href="http://www.blogblimp.com/styles/main.css" />
+
+    <style>
+        .center { 
+	text-align: center;
+	}
+
+	.center table { 
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	}
+    </style>
+	
+</head>
+
+<body style="text-align:center">
+
+    <div id="pagewrapper">
+
+    <header>
+
+        <img src="http://awesome.blogblimp.com/images/misc/bblogofullmobile.png" alt="BlogBlimp"/><br />
+
+	<h2>A five-star in-flight menu <wbr>of responsiveness and gratitude.</h2>
+
+	<nav>
+	    <span>
+		<a href="http://blogblimp.com"><strong>HOME</strong></a>
+		<span style="padding:10px"></span>
+		<a href="http://blogblimp.com/about.html"><strong>ABOUT</strong></a>
+		<span style="padding:10px"></span>
+		<wbr>
+		<a href="http://blogblimp.com/anydevice/anywhere/videos.html"><strong>VIDEOS</strong></a>
+		<span style="padding:10px"></span>
+		<a href="http://blogblimp.com/workshops.html"><strong>WORKSHOPS</strong></a>
+		<span style="padding:10px"></span>
+		<wbr>
+		<a href="http://blogblimp.com/anydevice/anywhere/portfolio.html"><strong>PORTFOLIO</strong></a>
+		<span style="padding:10px"></span>
+		<a href="http://blogblimp.com/contact.html"><strong>CONTACT</strong></a>
+	    </span>
+        </nav>
+	    
+    </header>
+
+    <br /><hr><br />
+
+    <article>
+
+       	<ul class="gallery">
+
+	    <li><a href="http://awesome.blogblimp.com/portfolio/text/bb.html" data-related-url="bb"><img src="http://awesome.blogblimp.com/portfolio/thumb/bb.jpg" alt="BlogBlimp" title="BlogBlimp" /></a></li>
+
+	    <li><a href="http://awesome.blogblimp.com/portfolio/text/bfx.html" data-related-url="bfx"><img src="http://awesome.blogblimp.com/portfolio/thumb/bfx.jpg" alt="Bravoflix." title="Bravoflix" /></a></li>
+
+	    <li><a href="http://awesome.blogblimp.com/portfolio/text/bfxfb.html" data-related-url="bfxfb"><img src="http://awesome.blogblimp.com/portfolio/thumb/bfxfb.jpg" alt="Bravoflix on Facebook" title="Bravoflix on Facebook" /></a></li>
+
+	    <li><a href="http://awesome.blogblimp.com/portfolio/text/cc.html" data-related-url="cc"><img src="http://awesome.blogblimp.com/portfolio/thumb/cc.jpg" alt="Classical Confidential" title="Classical Confidential" /></a></li>
+
+	    <li><a href="http://awesome.blogblimp.com/portfolio/text/co.html" data-related-url="co"><img src="http://awesome.blogblimp.com/portfolio/thumb/co.jpg" alt="City Opera" title="City Opera" /></a></li>
+
+	    <li><a href="http://awesome.blogblimp.com/portfolio/text/ct.html" data-related-url="ct"><img src="http://awesome.blogblimp.com/portfolio/thumb/ct.jpg" alt="Concert Talent" title="Concert Talent" /></a></li>
+
+	    <li><a href="http://awesome.blogblimp.com/portfolio/text/cj.html" data-related-url="cj"><img src="http://awesome.blogblimp.com/portfolio/thumb/cj.jpg" alt="Cajagua" title="Cajagua" /></a></li>
+
+	    <li><a href="http://awesome.blogblimp.com/portfolio/text/bj.html" data-related-url="bj"><img src="http://awesome.blogblimp.com/portfolio/thumb/bj.jpg" alt="Babajala" title="Babajala" /></a></li>
+
+	    <li><a href="http://awesome.blogblimp.com/portfolio/text/wmp.html" data-related-url="wmp"><img src="http://awesome.blogblimp.com/portfolio/thumb/wmp.jpg" alt="World Music Partners" title="World Music Partners" /></a></li>
+
+        </ul>
+
+    </article>
+
+    <div class="clear_both"></div>
+
+    <footer>
+        <br />&copy; 2011 BlogBlimp. <wbr>All rights reserved.<br/>Made with love in Los Angeles, CA.
+    </footer>
+
+    </div><!--pagewrapper-->
+
+
+    <script>
+        // Crazy Egg
+        setTimeout(function(){var a=document.createElement("script");
+        var b=document.getElementsByTagName('script')[0];
+        a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/6832.js?"+Math.floor(new Date().getTime()/3600000);
+        a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+    </script>
+
+    <!--Clicky-->
+    <script src="//static.getclicky.com/js"></script>
+    <script>try{ clicky.init(66520566); }catch(e){}</script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66520566ns.gif" /></p></noscript>
+
+</body>	
+</html>

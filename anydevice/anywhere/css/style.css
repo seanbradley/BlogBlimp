@@ -1,0 +1,228 @@
+
+/********************** CSS Reset Styles ************************/
+/*** Custom CSS Framework by Milos Vujnovic, Avenue 81 Inc. ***/
+
+body {
+	width: 900px;
+	background: #FFFFFF url("../images/background-main.png") repeat-x;
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 0px 0px;
+}
+
+p {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+img {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+a, a:hover, a:visited, a:active {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#wrapper-main { 
+	width: 960px;
+	margin: 9px auto 0px auto;
+	background: #000000;
+}
+
+/****************************************************************/
+/*****************   CUSTOM FONTS [WEBKIT]   *******************/
+
+@font-face {
+	font-family: HelveticaNeueLTStd-MdCn;
+	font-weight: normal;
+	src: url("../fonts/HelveticaNeueLTStd-MdCn.otf");
+}
+
+@font-face {
+	font-family: HelveticaNeueLTStd-BdCn;
+	font-weight: bold;
+	src: url("../fonts/HelveticaNeueLTStd-BdCn.otf");
+}
+
+@font-face {
+	font-family: HelveticaNeueLTStd-Lt;
+	font-weight: normal;
+	src: url("../fonts/HelveticaNeueLTStd-Lt.otf");
+}
+
+@font-face {
+	font-family: HelveticaNeueLTStd-Blk;
+	font-weight: normal;
+	src: url("../fonts/HelveticaNeueLTStd-Blk.otf");
+}
+
+@font-face {
+	font-family: HelveticaNeueLTStd-Bd;
+	font-weight: normal;
+	src: url("../fonts/HelveticaNeueLTStd-Bd.otf");
+}
+
+@font-face {
+	font-family: nevis;
+	font-weight: normal;
+	src: url("../fonts/nevis.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: ebrimabd;
+	font-weight: bold;
+	src: url("../fonts/ebrimabd.ttf");
+}
+
+/****************************************************************/
+/************************   CONTENT   **************************/
+
+
+#wrapper-main { 
+	width: 900px;
+	background: url("../images/background_video.jpg") no-repeat;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+#video { height: 479px; padding: 22px 35px 0px 0px; }
+
+#evp-62caaeebf501e1cebe576177d5dd96f2-wrap {
+	height: 469px;
+    left: -17px;
+    position: relative;
+    top: 22px;
+    width: 833px;
+}
+
+/****************************************************************/
+/***********************   CONTENT BOTTOM   *********************/
+
+#content-bottom {
+	margin: -15px 0px 0px 22px;
+	padding: 0px 0px 0px 0px;
+	width: 823px;
+	height: 313px;
+}
+
+#content-bottom h4 {
+	font-family: HelveticaNeueLTStd-Bd, Tahoma;
+	font-size: 28.33px;
+	font-weight: normal;
+	text-align: center;
+	padding: 39px 0px 0px 0px;
+	margin: 0 auto;
+	width: 860px;
+	height: 33px;
+	background: url("../images/content-bottom/heading-background.png") no-repeat 0 42px;
+}
+
+#email-signup { 
+	width: 823px;
+	height: 111px;
+	margin: 0 auto;
+	padding: 0px 0px 0px 0px;
+	background: url("../images/form-background.png") no-repeat;
+}
+
+#form-wrapper { 
+	margin-top: -105px; 
+	margin-left: 541px;
+	position: absolute;
+}
+
+form { 
+	padding: 0px 0px 0px 0px;
+	margin: 34px auto 0px auto;
+	width: 823px;
+	height: 143px;
+}
+
+form p {
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: normal;
+	padding-bottom: 4px;
+}
+
+form p#privacy{
+	font-family: Arial;
+	font-size: 10px;
+	font-weight: normal;
+	width: 315px;
+	padding-top: 8px;
+	line-height: 12px;
+}
+
+input#Contact0Email {
+	width: 322px;
+	height: 46px;
+	background: url("../images/form-input-background.png") no-repeat;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+	padding: 0px 0px 0px 0px;
+	margin: 49px 0px 0px 61px;
+	border: none;
+	float: left;
+	text-align: center;
+}
+
+input#Submit {
+	padding: 27px 0px 0px 169px;
+}
+
+/**********************************
+************ FOOTER ***************
+**********************************/
+
+#footer {
+	padding: 50px 0px 0px 0px; 
+	margin: 0px auto 0px -10px;
+	text-align: center;
+	width: 900px;
+}
+
+#footer p {
+	padding: 13px 0px 11px 0px;
+	font-size: 12px;
+	line-height: 18px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #727272;
+}
+
+#footer ul {
+	list-style: none;
+	list-style-type: none;
+	display: inline;
+	padding: 0px 0px 0px 0px; 
+	margin: 0px auto 0px auto;
+	text-align: center;
+	width: 960px;
+}
+
+#footer ul li {
+	list-style: none;
+	list-style-type: none;
+	display: inline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #5e5e5e;
+	padding: 0px 8px 0px 8px; 
+	margin: 0px auto 0px auto;
+	border-right: 1px solid #c2c2c2;
+}
+
+#footer ul li a, #footer ul li a:visited, #footer ul li a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #5e5e5e;
+}

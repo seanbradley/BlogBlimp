@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Upload Videos to Bravoflix with the help of BlogBlimp</title>   
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="dc.language" content="en" />
+    <meta name="geo.country" content="US" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" >
+
+    <meta name="description" content="Upload your videos to Bravoflix" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <script src="../build/jquery.js"></script>
+    <script src="../build/mediaelement-and-player.min.js"></script>
+
+    <!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<link rel="stylesheet" href="../styles/main_ie.css" />
+    <![endif]-->
+
+    <link rel="stylesheet" href="http://www.blogblimp.com/styles/main.css" />
+    <link rel="stylesheet" href="../build/mediaelementplayer.min.css" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+
+    <style>
+	div.center {   
+	margin-left: auto;   
+	margin-right: auto;  
+	max-width: 794px; 
+        width:expression( document.body.clientWidth > 794? "794px": "auto" );  
+	}
+
+	span {
+	font-family: Arial, Sans-Serif;
+	color: #757172;
+	}
+    </style>
+
+</head>
+
+<body>
+
+    <div id="pagewrapper">
+
+    <header>
+
+        <div  style="text-align:center; padding-top: 30px">
+
+	    <h2>Upload Your Videos to Bravoflix</h2><br />
+	    <h3 style="color:#757172"></h3>
+
+	</div>
+
+    </header>
+
+    <article>
+
+        <div id="mainContent">
+
+	    <div class="center">
+ 
+	       <p>Yeah! It worked.  Your file uploaded successfully.</p>
+
+	           <form action="https://blogblimp.s3.amazonaws.com/" method="post" enctype="multipart/form-data">
+      		       <input type="hidden" name="key" value="uploads/${filename}">
+      		       <input type="hidden" name="AWSAccessKeyId" value="07fff17ae82b6089b2cd11140977e1f328d9286c96746ae1cdad7e42d288ab09"> 
+      		       <input type="hidden" name="acl" value="private"> 
+      		       <input type="hidden" name="success_action_redirect" value="http://blogblimp.com/uploadsuccess.html">
+      		       <input type="hidden" name="policy" value="eyJleHBpcmF0aW9uIjogIjIwMTMtMDEtMDFUMDA6MDA6MDBaIiwNCiAgImNvbmRpdGlvbnMiOiBbIA0KICAgIHsiYnVja2V0IjogImJsb2dibGltcCJ9LCANCiAgICBbInN0YXJ0cy13aXRoIiwgIiRrZXkiLCAidXBsb2Fkcy8iXSwNCiAgICB7ImFjbCI6ICJwcml2YXRlIn0sDQogICAgeyJzdWNjZXNzX2FjdGlvbl9yZWRpcmVjdCI6ICJodHRwOi8vYmxvZ2JsaW1wLmNvbS91cGxvYWRzdWNjZXNzLmh0bWwifSwNCiAgICBbInN0YXJ0cy13aXRoIiwgIiRDb250ZW50LVR5cGUiLCAiIl0sDQogICAgWyJjb250ZW50LWxlbmd0aC1yYW5nZSIsIDAsIDUwMDAwMDAwMDBdDQogIF0NCn0NCg==">
+      		       <input type="hidden" name="signature" value="VSgsrIpnnRxF/5OrbEdk+gESvvo=">
+      		       <input type="hidden" name="Content-Type" value="video/quicktime">
+     
+		   <!-- Include any additional input fields here -->
+
+      		       File to upload to S3: 
+      		       <input name="file" type="file"> 
+      		       <br> 
+      		       <input type="submit" value="Upload File to S3"> 
+    		   </form> 
+	       
+	    </div>
+ 
+        </div><!--MainContent-->
+
+    </article>
+
+    <div class="clear_both"></div>
+    
+    <br />
+
+    <footer>
+        <p>
+	<h3><strong>&copy; 2012 by Sean Bradley. All rights reserved.</strong></h3><br />
+	<br />
+	<span><strong>Powered by <a href="http://blogblimp.com">BlogBlimp</a>.</strong></span><br />
+	<img src="http://awesome.blogblimp.com/images/misc/tinyblimp.png" alt="" height="65" />
+	<br />
+	<strong>High-performance cloud-based computing for artists with global audiences.</strong>
+	</p>
+    </footer>
+
+    </div><!--pagewrapper-->
+
+    <!--Clicky-->
+    <script src="//static.getclicky.com/js"></script>
+    <script>try{ clicky.init(66520566); }catch(e){}</script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66520566ns.gif" /></p></noscript>
+
+</body>
+</html>
+
+
+
+
