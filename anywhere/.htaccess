@@ -1,6 +1,0 @@
-<Files privateconcert.html>
-AuthName "Login"
-AuthType Basic
-AuthUserFile /etc/httpd/conf/.htpasswd
-require valid-user
-</Files>
