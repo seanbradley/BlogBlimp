@@ -1,8 +1,5 @@
 (function($) {
             $(document).ready(function() {
-                $('#logo').click(function() {
-                    document.location.href = 'http://www.blogblimp.com/images';
-                });
             
                 $('#blimp')
                     .sprite({
@@ -32,14 +29,14 @@
                             }
                         }
                     })
-                    .spRandom({top: 160, bottom: 300, left: 320, right: 480})
+                    .spRandom({top: 200, bottom: 350, left: 320, right: 480})
                     .isDraggable()
                     .activeOnClick()
                     .active();
                 $('#clouds').pan({fps: 30, speed: 0.7, dir: 'left', depth: 10});
                 $('#skyline2').pan({fps: 30, speed: 2, dir: 'left', depth: 30});
                 $('#skyline1').pan({fps: 30, speed: 3, dir: 'left', depth: 70});
-                                $('#balloons').pan({fps: 30, speed: 3, dir: 'up', depth: 70});
+                $('#balloons').pan({fps: 30, speed: 3, dir: 'up', depth: 70});
                 $('#skyline1, #skyline2, #clouds').spRelSpeed(8);
                 
                 window.actions = {

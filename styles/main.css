@@ -1,24 +1,31 @@
 @charset="UTF-8"
 
 
-/* flying blimp animation on homepage */
+/* #####################  global styles ##################### */
 
-/* Adjust this code: spRandom({top: 160, bottom: 300, left: 320, right: 480})   in the /scripts/jquiery.blimpy.js file to constrain the box in which the blimp div flies around   The blimp image file itself isn't moving across the skyline, but rather the blimp div which contains the image. Changing the styling of the div only impacts whether a whole or part of the blimp sprite is visible. This code should be adjusted in response to the above media queries so that the blimp animation is replaced with a static image when the page is loaded on a mobile device. */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ##################### body layout ##################### */
+
+
+article, details, figcaption, figure, footer, header, hgroup, menu, section { 
+    display: block;
+}
+
+header {
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: 1px solid #ddd;
+}
 
 #stage {
     top: 0px;
     left: 0px;
     z-index: 100;
-}
-
-.stage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-width: 320px;
-    height: 313px;
-    overflow: hidden;
 }
 
 #bg {
@@ -37,84 +44,14 @@
     background: transparent url(http://awesome.blogblimp.com/images/misc/hill-with-windmill.png) 0 46px repeat-x;
 }
 
-#balloons {
-    position: relative;
-    left: 720px;
-    background: transparent url(http://awesome.blogblimp.com/images/misc/balloons.png) 0 0 repeat-y;
-}
-
-#blimp {
-    background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
-    position: absolute;
-    top: 200px;
-    left: 65px;
-    width: 180px;
-    height: 123px;
-    z-index: 2000;
-    cursor: pointer;
-}
-
-
-/* global styles */
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-
-/* body layout */
-
-
-article, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
-    display: block;
-}
-
-
-header {
-    display: block;
-    text-align: center; 
-    border-bottom: 1px solid #ddd;
-}
-
-
-#logo {
-    background: url(http://awesome.blogblimp.com/images/misc/bblogo.png) 0 0 no-repeat;
-    width: 378px;
-    height: 121px;
-    position: absolute;
-    top: 7px;
-    left: 30px;
-    z-index: 1900;
-    text-indent: -9999px;
-}
-
-
-#spriteContainer  {
-    min-width:320px;
-    /* padding-top:280px; */
-    position:relative;
-    width:100%;
-}
-
-
 #content {
     margin-right: 250px;
 }
-
-
-#mainContent {
-    padding: 40px 30px 30px 30px;
-}
-
 
 div.centered 
 {
 text-align: center;
 }
-
 
 div.centered table 
 {
@@ -122,6 +59,108 @@ margin: 0 auto;
 text-align: center;
 }
 
+ul {
+    padding-left: 40px;
+}
+
+/* ##################### typography ##################### */
+
+
+@font-face {
+    font-family: GraublauWeb;
+    font-weight: bold;
+    src: url('graublauwebbold-webfont.eot?') format('eot'), url('graublauwebbold-webfont.woff') format('woff'), url('graublauwebbold-webfont.ttf') format('truetype');
+}
+
+pre {
+    border: 0px solid silver;
+    margin: 0px 0;
+    padding: 0px;
+    font-family: Arial, Sans-Serif;
+}
+
+body {
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: 0px;
+    font-family: Cabin, Arial, Sans-Serif;
+    font-size: 15px;
+    color: #2C2C36; /*medium/slightly bluish asphalt*/
+    line-height: 1.6em;
+}
+
+h1, h2, h5 {
+    /*text-transform: uppercase;*/
+    font-family:GraublauWeb, Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #FF6633; /*orange*/
+}
+
+h1 {
+    font-size: 1.47em;
+    line-height: 1.2em;
+    margin: 8px 0 38px 0;
+}
+
+h2 {
+    font-size: 1.33em;
+    line-height: 1.2em;
+    margin: 8px 0px 15px 0px;
+}
+
+h3, h4 {
+    font-family: Cabin, Arial, Sans-Serif;
+    font-size: 1.20em;
+    line-height: 1.2em;
+    margin: 8px 0px 15px 0px;
+    color: #525151; /*light asphalt*/
+}
+
+h4 {
+    font-family: Cabin, Arial, Sans-Serif;
+    font-size: 1.07em;
+    line-height: 1.1em;
+    margin: 8px 0px 15px 0px;
+    color: #525151; /*light asphalt*/
+}
+
+h5 {
+    font-size: 1.07em;
+    line-height: 1.1em;
+    margin: 8px 0 15px 0;
+}
+
+h1 a, h2 a, h3 a, h4 a, h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited {
+    text-decoration: none; ! important
+    color: #FF6633; /*orange*/
+}
+
+#mainContent h1 {
+    text-align: -9999px;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+a {
+    color: #FF6633; /*sky blue*/
+    text-decoration: none;
+} 
+
+a:visited {
+    color: #3a9bc7; /*tiffany blue*/
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3a9bc7; /*sky blue*/
+    text-decoration: underline;
+}
+
+a img {
+    border: 0;
+}
 
 footer {
     display: block;
@@ -129,7 +168,7 @@ footer {
     border-top: 1px solid #ddd;
     padding: 15px 10px 15px 20px;
     font-size: .9em;
-    color: #757575;
+    color: #757575; /*light gray*/
     background-color: #fff;
     -webkit-border-bottom-left-radius: 10px;
     -moz-border-radius-bottomleft: 10px;
@@ -145,7 +184,7 @@ footer {
 }
 
 
-/* panel and/or gallery classes for portfolio */
+/* ##################### gallery for portfolio ##################### */
 
 .panel {
     margin-bottom: 2em;
@@ -189,123 +228,7 @@ footer {
 }
 
 
-/* Typography */
-
-pre {
-    background: #fff;
-    border: 0px solid silver;
-    margin: 0px 0;
-    padding: 0px;
-    font-family: Arial, Sans-Serif;
-}
-
-
-body {
-    background: #fff;
-    width: auto;
-    height: 100%;
-    font-family: Cabin, Arial, Sans-Serif;
-    font-size: 15px;
-    color: #514F50;
-    line-height: 1.6em;
-}
-
-
-h1 a, h2 a, h3 a, h4 a, h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited {
-    text-decoration: none; ! important
-    color: #FF6633;
-}
-
-
-h1 {
-    font-size: 1.93em;
-    line-height: 1.2em;
-    margin: 8px 0 38px 0;
-}
-
-
-h2 {
-    font-size: 1.47em;
-    line-height: 1.2em;
-    margin: 8px 0 15px 0;
-}
-
-
-h3, h4 {
-    font-family: Cabin, Arial, Sans-Serif;
-    font-size: 1.20em;
-    line-height: 1.2em;
-    margin: 8px 0 15px 0;
-}
-
-
-h3 {
-    color: #757172;
-}
-
-
-h4 {
-    font-size: 1.07em;
-    line-height: 1.1em;
-    margin: 8px 0 15px 0;
-}
-
-
-h4 (
-    color: #757172;
-}
-
-
-h5 {
-    font-size: 1.07em;
-    line-height: 1.1em;
-    margin: 8px 0 15px 0;
-}
-
-@font-face {
-    font-family: GraublauWeb;
-    font-weight: bold;
-    src: url('graublauwebbold-webfont.eot?') format('eot'), url('graublauwebbold-webfont.woff') format('woff'), url('graublauwebbold-webfont.ttf') format('truetype');
-}
-
-
-h1, h2, h5 {
-    /*text-transform: uppercase;*/
-    font-family:GraublauWeb, Verdana, Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    /*color: #FF6633;*/
-}
-
-
-#mainContent h1 {
-    text-align: -9999px;
-    height: 0;
-    overflow: hidden;
-    margin: 0;
-}
-
-a, a:visited {
-    color: #3a9bc7;
-    text-decoration: none;
-}
-
-
-a:hover {
-    text-decoration: underline;
-}
-
-
-a img {
-    border: 0;
-}
-
-
-ul {
-    padding-left: 40px;
-}
-
-
-/* forms and buttons */
+/* ##################### forms and buttons ##################### */
 
 .css3button {
 display: block;
@@ -331,3 +254,459 @@ width: 100px;
         1px -1px 0px rgba(000,000,000,0.2),
         0px 1px 0px rgba(255,255,255,0.9);
 }
+
+
+/* ##################### media queries ##################### */
+
+@media (min-width: 980px) {
+
+    #logo {
+        background: url(http://awesome.blogblimp.com/images/misc/bblogo.png) center top no-repeat;
+        min-height: 80px;
+    }
+
+
+    #spriteContainer  {
+        min-width:320px;
+        position:relative;
+        width:100%;
+    }
+
+    .stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 313px;
+        overflow: hidden;
+    }
+    
+    #blimp {
+        background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
+        position: absolute;
+        top: 300px;
+        left: 65px;
+        width: 180px;
+        height: 123px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+
+    #headerContent {
+        padding: 0px 40px 30px;
+    }
+
+    #pusher {
+        padding: 340px 0px 0px;
+    }
+    
+    #mainContent {
+        padding: 0px 40px 30px;
+    }
+    
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+    #logo {
+        background: url(http://awesome.blogblimp.com/images/misc/bblogo.png) center top no-repeat;
+        min-height: 80px;
+    }
+
+    #spriteContainer  {
+        min-width:320px;
+        /* padding-top:280px; */
+        position:relative;
+        width:100%;
+    }
+
+    .stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 979px;
+        height: 313px;
+        overflow: hidden;
+    }
+    
+    #blimp {
+        background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
+        position: absolute;
+        top: 300px;
+        left: 65px;
+        width: 180px;
+        height: 123px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+        
+    #headerContent {
+        padding: 0px 40px 30px;
+    }
+    
+    #pusher {
+        padding: 340px 0px 0px;
+    }
+    
+    #mainContent {
+        padding: 0px 30px 30px;
+    }
+    
+}
+
+
+/* Everything from big screen Androids to Kindles on down */
+@media (min-width: 686px) and  and (max-width: 767px) {
+
+    #logo {
+        background: url(http://awesome.blogblimp.com/images/misc/bblogo.png) center top no-repeat;
+        min-height: 80px;
+    }
+
+    #spriteContainer  {
+        min-width:280px;
+        position:relative;
+        width:100%;
+    }
+
+    .stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 767px;
+        height: 313px;
+        overflow: hidden;
+    }
+    
+    #blimp {
+        background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
+        position: absolute;
+        top: 300px;
+        left: 65px;
+        width: 180px;
+        height: 123px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+        
+    #headerContent {
+        padding: 0px 40px 30px;
+    }
+
+    #pusher {
+        padding: 340px 0px 0px;
+    }
+        
+    #mainContent {
+        padding: 0px 40px 30px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 685px) {
+
+    #logo {
+        background: url(http://awesome.blogblimp.com/images/misc/bblogo.png) center top no-repeat;
+        min-height: 80px;
+    }
+
+    #spriteContainer  {
+        min-width:220px;
+        position:relative;
+        width:100%;
+    }
+
+    .stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 685px;
+        height: 313px;
+        overflow: hidden;
+    }
+    
+    #blimp {
+        background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
+        position: absolute;
+        top: 300px;
+        left: 20px;
+        width: 180px;
+        height: 123px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+    
+    #headerContent {
+        padding: 0px 40px 30px;
+    }
+
+    #pusher {
+        padding: 340px 0px 0px;
+    }
+        
+    #mainContent {
+        padding: 0px 40px 30px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    #logo {
+        background: url(http://awesome.blogblimp.com/images/misc/bblogo.png) center top no-repeat;
+        min-height: 80px;
+    }
+
+    #spriteContainer  {
+        min-width:180px;
+        /* padding-top:280px; */
+        position:relative;
+        width:100%;
+    }
+
+    .stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 600px;
+        height: 313px;
+        overflow: hidden;
+    }
+    
+    #blimp {
+        background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
+        position: absolute;
+        top: 300px;
+        left: 20px;
+        width: 180px;
+        height: 123px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+    
+    #headerContent {
+        padding: 0px 40px 30px;
+    }
+
+    #pusher {
+        padding: 340px 0px 0px;
+    }
+        
+    #mainContent {
+        padding: 0px 40px 30px;
+    }
+    
+}
+    
+
+@media only screen and (max-width: 568px) {
+
+    #logo {
+        background: url(http://awesome.blogblimp.com/images/misc/bblogomobile.png) center top no-repeat;
+        min-height: 80px;
+    }
+
+    #spriteContainer  {
+        min-width:180px;
+        /* padding-top:280px; */
+        position:relative;
+        width:100%;
+    }
+
+    .stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 568px;
+        height: 313px;
+        overflow: hidden;
+    }
+    
+    #blimp {
+        background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
+        position: absolute;
+        top: 300px;
+        left: 20px;
+        width: 180px;
+        height: 123px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+        
+    #headerContent {
+        padding: 0px 40px 30px;
+    }
+
+    #pusher {
+        padding: 340px 0px 0px;
+    }
+        
+    #mainContent {
+        padding: 0px 40px 30px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    #logo {
+        background: url(http://awesome.blogblimp.com/images/misc/bblogomobile.png) center top no-repeat;
+        min-height: 50px;
+    }
+
+    #spriteContainer  {
+        min-width:180px;
+        /* padding-top:280px; */
+        position:relative;
+        width:100%;
+    }
+
+    .stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 480px;
+        height: 313px;
+        overflow: hidden;
+    }
+    
+    #blimp {
+        background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
+        position: absolute;
+        top: 400px;
+        left: 15px;
+        width: 180px;
+        height: 123px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+    
+    #headerContent {
+        padding: 0px 20px 30px;
+    }
+
+    
+    #pusher {
+        padding: 340px 0px 0px;
+    }
+        
+    #mainContent {
+        padding: 0px 20x 30px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 320px) {
+
+    #logo {
+        background: url(http://awesome.blogblimp.com/images/misc/bblogomobile.png) center top no-repeat;
+        min-height: 50px;
+    }
+
+    #spriteContainer  {
+        min-width:180px;
+        /* padding-top:280px; */
+        position:relative;
+        width:100%;
+    }
+
+    .stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 320px;
+        height: 313px;
+        overflow: hidden;
+    }
+
+    #blimp {
+        background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
+        position: absolute;
+        top: 430px;
+        left: 10px;
+        width: 180px;
+        height: 123px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+    
+    #headerContent {
+        padding: 0px 20px 30px;
+    }
+
+    
+    #pusher {
+        padding: 340px 0px 0px;
+    }
+        
+    #mainContent {
+        padding: 0px 20x 30px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 240px) {
+
+    #logo {
+        background: url(http://awesome.blogblimp.com/images/misc/bblogomobile.png) center top no-repeat;
+        min-height: 50px;
+    }
+
+    #spriteContainer  {
+        min-width:180px;
+        position:relative;
+        width:100%;
+    }
+
+    .stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 280px;
+        height: 313px;
+        overflow: hidden;
+    }
+
+    #blimp {
+        background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
+        position: absolute;
+        top: 430px;
+        left: 5px;
+        width: 180px;
+        height: 123px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+    
+    #headerContent {
+        padding: 0px 10px 20px;
+    }
+
+    
+    #pusher {
+        padding: 340px 0px 0px;
+    }
+        
+    #mainContent {
+        padding: 0px 20x 30px;
+    }
+    
+}
+
+/* ##################### flying blimp on homepage #####################  */
+
+/* Adjust this code: spRandom({top: 160, bottom: 300, left: 320, right: 480})   in the /scripts/jquiery.blimpy.js file to constrain the box in which the blimp div flies around   The blimp image file itself isn't moving across the skyline, but rather the blimp div which contains the image. Changing the styling of the #blimp div in this file only impacts whether a whole or part of the blimp sprite is visible. */
