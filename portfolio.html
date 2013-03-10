@@ -15,33 +15,15 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script src="../build/jquery.js"></script>
     <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-    <script src="http://www.blogblimp.com/anydevice/anywhere/jquery.reveal.js"></script>
+    <script src="../scripts/jquery.reveal.js"></script>
+    <script src="../build/jquery.js"></script>
     <script src="../build/mediaelement-and-player.min.js"></script>
-
-    <script> // <![CDATA[
-    if ((navigator.userAgent.indexOf('iPhone') != -1) || (navigator.userAgent.indexOf('iPod') != -1)) {
-        document.location = "http://www.blogblimp.com/anydevice/anywhere/mobifolio1.html";
-    } // ]]>
-    if (navigator.userAgent.indexOf('iPad') != -1) != -1)) {
-        document.location = "http://www.blogblimp.com/anydevice/anywhere/mobifolio2.html";
-    } // ]]>
-    </script>
-
-    <link rel="stylesheet" href="http://www.blogblimp.com/styles/main.css" />
-    <link rel="stylesheet" href="http://www.blogblimp.com/styles/reveal.css">
-    <link href="http://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../build/mediaelementplayer.css" />
-
-    <style>
-        div.center {   
-        margin-left: auto;   
-        margin-right: auto;  
-        max-width: 480px; 
-        width:expression( document.body.clientWidth > 480? "480px": "auto" );  
-        }
-    </style>
+    <link href="../styles/main.css" rel="stylesheet" />
+    <link href="../styles/font-awesome.min.css" rel="stylesheet" >
+    <link href="../styles/reveal.css" rel="stylesheet" >
+    <link href="../build/mediaelementplayer.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
 
 </head>
 
@@ -49,267 +31,252 @@
 
     <div id="pagewrapper">
 
-    <header>
+        <header>
 
-        <img src="http://awesome.blogblimp.com/images/misc/bblogofullmobile.png" alt="BlogBlimp"/><br />
+            <img src="http://awesome.blogblimp.com/images/misc/bblogofullmobile.png" alt="BlogBlimp"/><br />
+            <h2>A five-star in-flight menu of responsiveness and gratitude.</h2>
 
-        <h2>a five-star in-flight menu <wbr>of responsiveness and gratitude</h2>
+                <nav>
+                    
+                    <p>
+                        <a href="http://blogblimp.com"><strong>Home</strong></a>
+                        <span style="padding:10px"></span>
+                        <a href="http://blogblimp.com/about.html"><strong>About</strong></a>
+                        <span style="padding:10px"></span>
+                        <wbr>
+                        <a href="http://blogblimp.com/videos.html"><strong>Videos</strong></a>
+                        <span style="padding:10px"></span>
+                        <a href="http://blogblimp.com/workshops.html"><strong>Workshops</strong></a>
+                        <span style="padding:10px"></span>
+                        <wbr>
+                        <a href="http://blogblimp.com/portfolio.html"><strong>Portfolio</strong></a>
+                        <span style="padding:10px"></span>
+                        <a href="http://blogblimp.com/contact.html"><strong>Contact</strong></a>
+                    </p>
+                    <h4>Click on each image below for more information...</h4>
+                    
+                </nav>
 
-    <nav>
-                <p>
-                    <a href="http://blogblimp.com"><strong>home</strong></a>
-                    <span style="padding:10px"></span>
-                    <a href="http://blogblimp.com/about.html"><strong>about</strong></a>
-                    <span style="padding:10px"></span>
-                    <wbr>
-                    <a href="http://blogblimp.com/videos.html"><strong>videos</strong></a>
-                    <span style="padding:10px"></span>
-                    <a href="http://blogblimp.com/workshops.html"><strong>workshops</strong></a>
-                    <span style="padding:10px"></span>
-                    <wbr>
-                    <a href="http://blogblimp.com/portfolio.html"><strong>portfolio</strong></a>
-                    <span style="padding:10px"></span>
-                    <a href="http://blogblimp.com/contact.html"><strong>contact</strong></a>
+            <div style="padding:10px"></div>
+
+        </header>
+
+        <div style="padding:10px"></div>
+
+            <article>
+                
+                <ul class="gallery">
+
+                <li><a href="#" data-reveal-id="bb"><img src="http://awesome.blogblimp.com/portfolio/thumb/bb.jpg" alt="BlogBlimp" title="BlogBlimp" /></a></li>
+
+                <li><a href="#" data-reveal-id="bfx"><img src="http://awesome.blogblimp.com/portfolio/thumb/bfx.jpg" alt="Bravoflix." title="Bravoflix" /></a></li>
+
+                <li><a href="#" data-reveal-id="bfxfb"><img src="http://awesome.blogblimp.com/portfolio/thumb/bfxfb.jpg" alt="Bravoflix on Facebook" title="Bravoflix on Facebook" /></a></li>
+
+                <li><a href="#" data-reveal-id="cc"><img src="http://awesome.blogblimp.com/portfolio/thumb/cc.jpg" alt="Classical Confidential" title="Classical Confidential" /></a></li>
+
+                <li><a href="#" data-reveal-id="co"><img src="http://awesome.blogblimp.com/portfolio/thumb/co.jpg" alt="City Opera" title="City Opera" /></a></li>
+
+                <li><a href="#" data-reveal-id="ct"><img src="http://awesome.blogblimp.com/portfolio/thumb/ct.jpg" alt="Concert Talent" title="Concert Talent" /></a></li>
+
+                <li><a href="#" data-reveal-id="cj"><img src="http://awesome.blogblimp.com/portfolio/thumb/cj.jpg" alt="Cajagua" title="Cajagua" /></a></li>
+
+                <li><a href="#" data-reveal-id="bj"><img src="http://awesome.blogblimp.com/portfolio/thumb/bj.jpg" alt="Babajala" title="Babajala" /></a></li>
+
+                <li><a href="#" data-reveal-id="wmp"><img src="http://awesome.blogblimp.com/portfolio/thumb/wmp.jpg" alt="World Music Partners" title="World Music Partners" /></a></li>
+
+                </ul>
+
+            </article>
+
+        <div style="padding:10px"></div>
+
+        <div id="bb" class="reveal-modal">
+            <div class="centered_vid">
+                <h1>BlogBlimp</h1>
+                <p style="text-align:left">BlogBlimp's own website is built with fully-validated HTML5 / CSS3 and uses Javascript / JQuery magic to create powerful functionality and accessability.  Check out these cool features...<br />
+                    <ul class="icons">
+                        <li class="icon" style="text-align:left"><i class="icon-fighter-jet"></i>a flying sprite animation on the homepage that renders in any browser with Javascript enabled; uses media queries to adjust it's range of motion depending on the screen size.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-fullscreen"></i>an image/video gallery which also resizes dynamically to fit any screen size.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-circle-arrow-down"></i>each gallery image evokes a drop-down modal (like this one!), useful for additional info via embedded text or video.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-facetime-video"></i>all embedded video plays in .mp4 or HTML5 format with Flash "fall-forward" to ensure universal compatability regardless of end-user's device.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-cloud"></i>deployed on Amazon EC2, S3, Route53, and CloudFront for solid performance and scalability all over the globe.</li>
+                    </ul>
                 </p>
-    </nav>
-
-    <div style="padding:10px"></div>
-
-    </header>
-
-    <div style="padding:10px"></div>
-
-    <article>
-
-        <ul class="gallery">
-
-        <li><a href="#" data-reveal-id="bb"><img src="http://awesome.blogblimp.com/portfolio/thumb/bb.jpg" alt="BlogBlimp" title="BlogBlimp" /></a></li>
-
-        <li><a href="#" data-reveal-id="bfx"><img src="http://awesome.blogblimp.com/portfolio/thumb/bfx.jpg" alt="Bravoflix." title="Bravoflix" /></a></li>
-
-        <li><a href="#" data-reveal-id="bfxfb"><img src="http://awesome.blogblimp.com/portfolio/thumb/bfxfb.jpg" alt="Bravoflix on Facebook" title="Bravoflix on Facebook" /></a></li>
-
-        <li><a href="#" data-reveal-id="cc"><img src="http://awesome.blogblimp.com/portfolio/thumb/cc.jpg" alt="Classical Confidential" title="Classical Confidential" /></a></li>
-
-        <li><a href="#" data-reveal-id="co"><img src="http://awesome.blogblimp.com/portfolio/thumb/co.jpg" alt="City Opera" title="City Opera" /></a></li>
-
-        <li><a href="#" data-reveal-id="ct"><img src="http://awesome.blogblimp.com/portfolio/thumb/ct.jpg" alt="Concert Talent" title="Concert Talent" /></a></li>
-
-        <li><a href="#" data-reveal-id="cj"><img src="http://awesome.blogblimp.com/portfolio/thumb/cj.jpg" alt="Cajagua" title="Cajagua" /></a></li>
-
-        <li><a href="#" data-reveal-id="bj"><img src="http://awesome.blogblimp.com/portfolio/thumb/bj.jpg" alt="Babajala" title="Babajala" /></a></li>
-
-        <li><a href="#" data-reveal-id="wmp"><img src="http://awesome.blogblimp.com/portfolio/thumb/wmp.jpg" alt="World Music Partners" title="World Music Partners" /></a></li>
-
-        </ul>
-
-    </article>
-
-    <div style="padding:10px"></div>
-
-    <div id="bb" class="reveal-modal">
-         <div class="center">
-        <h1>BlogBlimp</h1>
-        <video width="480" height="270" poster="../media/CloudExplained.jpg" controls="controls" preload="none">
-                <!-- MP4 source must come first for iOS -->
-                <source type="video/mp4" src="../media/CloudExplained480x320.mp4" />
-                <!-- WebM for Firefox 4 and Opera -->
-                <source type="video/webm" src="../media/CloudExplained640x480.webm" />
-                <!-- Fallback flash player for no-HTML5 browsers with JavaScript turned off -->
-                <object width="480" height="270" type="application/x-shockwave-flash" data="../build/flashmediaelement.swf">                 
-                    <param name="movie" value="../build/flashmediaelement.swf" /> 
-                    <param name="flashvars" value="controls=true&amp;file=../media/CloudExplained480x320.mp4" />
-                    <!-- Image fall back for non-HTML5 browser with JavaScript turned off and no Flash player installed -->
-                    <img src="../media/CloudExplained.jpg" width="480" height="270" alt="The Cloud Explained" 
-                    title="No video playback. Update browser, enable Javascript, or install Flash." />
-                </object>         
-            </video>
-        </div>
-        <a class="close-reveal-modal">&#215;</a>
-    </div><!--end bb video container-->
+                
+                <!--
+                
+                // Video may be inserted instead of text into each dropdown modal like so...
+                
+                // 1) source type="video/mp4" must come first for iOS
+                // 2) then source type="video/webm" for Firefox 4 and Opera
+                // 3) then flash player object as fallback for no-HTML5 browsers with JavaScript turned off
+                // 4) finally static image fallback for non-HTML5 browser with JavaScript turned off and no Flash  player installed
+                
+                // Just replace the <p></p> with the following <video></video> code...and you may include this code and separate video source files for each modal <div> below.
+                    
+                <video width="480" height="270" poster="../media/CloudExplained.jpg" controls="controls" preload="none">
+                    <source type="video/mp4" src="../media/CloudExplained480x320.mp4" />
+                    <source type="video/webm" src="../media/CloudExplained640x480.webm" />
+                    <object width="480" height="270" type="application/x-shockwave-flash" data="../build/flashmediaelement.swf">                 
+                        <param name="movie" value="../build/flashmediaelement.swf" /> 
+                        <param name="flashvars" value="controls=true&amp;file=../media/CloudExplained480x320.mp4" />
+                        <img src="../media/CloudExplained.jpg" width="480" height="270" alt="The Cloud Explained" 
+                        title="No video playback. Update browser, enable Javascript, or install Flash." />
+                    </object>         
+                </video>
+                
+                -->
+            </div>
+            <a class="close-reveal-modal"><small>close</small> &#215;</a>
+        </div><!--end bb video container-->
 
 
-    <div id="bfx" class="reveal-modal">
-         <div class="center">
-        <h1>Bravoflix</h1>
-            <video width="480" height="270" poster="../media/CloudExplained.jpg" controls="controls" preload="none">
-                <!-- MP4 source must come first for iOS -->
-                <source type="video/mp4" src="../media/CloudExplained480x320.mp4" />
-                <!-- WebM for Firefox 4 and Opera -->
-                <source type="video/webm" src="../media/CloudExplained640x480.webm" />
-                <!-- Fallback flash player for no-HTML5 browsers with JavaScript turned off -->
-                <object width="480" height="270" type="application/x-shockwave-flash" data="../build/flashmediaelement.swf">                 
-                    <param name="movie" value="../build/flashmediaelement.swf" /> 
-                    <param name="flashvars" value="controls=true&amp;file=../media/CloudExplained480x320.mp4" /> 
-                    <!-- Image fall back for non-HTML5 browser with JavaScript turned off and no Flash player installed -->
-                    <img src="../media/CloudExplained.jpg" width="480" height="270" alt="The Cloud Explained" 
-                    title="No video playback. Update browser, enable Javascript, or install Flash." />
-                </object>
-            </video>
-        </div>
-        <a class="close-reveal-modal">&#215;</a>
-    </div><!--end bfx video container-->
+        <div id="bfx" class="reveal-modal">
+            <div class="centered_vid">
+                <h1>Bravoflix</h1>
+                <p style="text-align:left">A comprehensive, highly performant video content management system built on Pylons (a Python framework); Designed in collaboration with Simple Station, it was the first subscription video service of its kind in the U.S. to focus exclusively on the performing arts.  The site's functionality is comparable to YouTube at a fraction of the cost for existing SaaS platforms or self-hosted video solutions.<br />
+                    <ul class="icons">
+                        <li class="icon" style="text-align:left"><i class="icon-user"></i>user profiles and roles (e.g., subscribers vs. editors)</li>
+                        <li class="icon" style="text-align:left"><i class="icon-credit-card"></i>monthly subscription billing and payment gateway integration</li>
+                        <li class="icon" style="text-align:left"><i class="icon-dashboard"></i>administrative dashboard</li>
+                        <li class="icon" style="text-align:left"><i class="icon-calendar"></i>calendarized content publication</li>
+                        <li class="icon" style="text-align:left"><i class="icon-cogs"></i>multi-bitrate encoding of multiple video formats</li>
+                        <li class="icon" style="text-align:left"><i class="icon-cloud-upload"></i>storage of all videos in Amazon S3; uncensored global delivery of rich media via CloudFront CDN.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-search"></i>SEO optimization, and searchable categories and tags for all video content</li>
+                    </ul>
+                </p>
+            </div>
+            <a class="close-reveal-modal"><small>close</small> &#215;</a>
+        </div><!--end bfx video container-->
 
 
-    <div id="bfxfb" class="reveal-modal">
-         <div class="center">
-        <h1>Bravoflix&mdash;Custom Facebook Integration</h1>
-            <video width="480" height="270" poster="../media/CloudExplained.jpg" controls="controls" preload="none">
-                <!-- MP4 source must come first for iOS -->
-                <source type="video/mp4" src="../media/CloudExplained480x320.mp4" />
-                <!-- WebM for Firefox 4 and Opera -->
-                <source type="video/webm" src="../media/CloudExplained640x480.webm" />
-                <!-- Fallback flash player for no-HTML5 browsers with JavaScript turned off -->
-                <object width="480" height="270" type="application/x-shockwave-flash" data="../build/flashmediaelement.swf">                 
-                    <param name="movie" value="../build/flashmediaelement.swf" /> 
-                    <param name="flashvars" value="controls=true&amp;file=../media/CloudExplained480x320.mp4" />
-                    <!-- Image fall back for non-HTML5 browser with JavaScript turned off and no Flash player installed -->
-                    <img src="../media/CloudExplained.jpg" width="480" height="270" alt="The Cloud Explained" 
-                    title="No video playback. Update browser, enable Javascript, or install Flash." />
-                </object>
-            </video>
-        </div>
-        <a class="close-reveal-modal">&#215;</a>
-    </div><!--end bfxfb video container-->
+        <div id="bfxfb" class="reveal-modal">
+             <div class="centered_vid">
+                <h1>Bravoflix&mdash;Custom Facebook Integration</h1>
+                <p style="text-align:left">Seemless, branded Facebook profile customization.<br />
+                    <ul class="icons">
+                        <li class="icon" style="text-align:left"><i class="icon-twitter"></i>simultaneous one-click postings on Facebook wall, Twitter, and Blogger.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-key"></i>Access to special content incentivized by friends posting and sharing.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-envelope"></i>e-mail newsletter sign-up form.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-folder-close-alt"></i>custom Facebook tabs.</li>
+                    </ul>
+                </p>
+            </div>
+            <a class="close-reveal-modal"><small>close</small> &#215;</a>
+        </div><!--end bfxfb video container-->
+        
+        <div id="cc" class="reveal-modal">
+             <div class="centered_vid">
+                <h1>Classical Confidential</h1>
+                <p style="text-align:left">Temporary landing page for local concert series.<br />
+                    <ul class="icons">
+                        <li class="icon" style="text-align:left"><i class="icon-money"></i>fast and inexpensive means to validate user interest before incurring the expenses of building a full website.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-fullscreen"></i>responsive design adjusts dynamically to accommodate any screen-size, including mobile devices.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-user"></i>user login;  administrative dashboard.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-bar-chart"></i>integrated with Gmail, Google Analytics, and Google Webmaster Tools.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-cloud"></i>Search engine optimization and deployment via Google Apps.</li>
+                    </ul>
+                </p>
+            </div>
+            <a class="close-reveal-modal"><small>close</small> &#215;</a>
+        </div><!--end cc video container-->
 
 
-    <div id="co" class="reveal-modal">
-         <div class="center">
-        <h1>City Opera</h1>
-            <video width="480" height="270" poster="../media/CloudExplained.jpg" controls="controls" preload="none">
-                <!-- MP4 source must come first for iOS -->
-                <source type="video/mp4" src="../media/CloudExplained480x320.mp4" />
-                <!-- WebM for Firefox 4 and Opera -->
-                <source type="video/webm" src="../media/CloudExplained640x480.webm" />
-                <!-- Fallback flash player for no-HTML5 browsers with JavaScript turned off -->
-                <object width="480" height="270" type="application/x-shockwave-flash" data="../build/flashmediaelement.swf">                 
-                    <param name="movie" value="../build/flashmediaelement.swf" /> 
-                    <param name="flashvars" value="controls=true&amp;file=../media/CloudExplained480x320.mp4" />
-                    <!-- Image fall back for non-HTML5 browser with JavaScript turned off and no Flash player installed -->
-                    <img src="../media/CloudExplained.jpg" width="480" height="270" alt="The Cloud Explained" 
-                    title="No video playback. Update browser, enable Javascript, or install Flash." />
-                </object>
-            </video>
-        </div>
-        <a class="close-reveal-modal">&#215;</a>
-    </div><!--end co video container-->
+        <div id="co" class="reveal-modal">
+            <div class="centered_vid">
+                <h1>City Opera</h1>
+                <p style="text-align:left">Informational site leveraging the power of Google.<br />
+                    <ul class="icons">
+                        <li class="icon" style="text-align:left"><i class="icon-user"></i>Custom HTML and CSS styling, SEO optimized.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-credit-card"></i>Custom domain, @cityopera e-mail, and domain forwarding on Google's infrastructure.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-dashboard"></i>Multiple user accounts and permissions integrated with Google contacts.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-calendar"></i>Branded sign-on page.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-cogs"></i>Fully integrated with Google Drive (formerly Google Docs), Google Calendar, YouTube, and more.</li>
+                    </ul>
+                </p>
+            </div>
+            <a class="close-reveal-modal"><small>close</small> &#215;</a>
+        </div><!--end co video container-->
 
 
-    <div id="cc" class="reveal-modal">
-         <div class="center">
-        <h1>Classical Confidential</h1>
-            <video width="480" height="270" poster="../media/CloudExplained.jpg" controls="controls" preload="none">
-                <!-- MP4 source must come first for iOS -->
-                <source type="video/mp4" src="../media/CloudExplained480x320.mp4" />
-                <!-- WebM for Firefox 4 and Opera -->
-                <source type="video/webm" src="../media/CloudExplained640x480.webm" />
-                <!-- Fallback flash player for no-HTML5 browsers with JavaScript turned off -->
-                <object width="480" height="270" type="application/x-shockwave-flash" data="../build/flashmediaelement.swf">                 
-                    <param name="movie" value="../build/flashmediaelement.swf" /> 
-                    <param name="flashvars" value="controls=true&amp;file=../media/CloudExplained480x320.mp4" />
-                    <!-- Image fall back for non-HTML5 browser with JavaScript turned off and no Flash player installed -->
-                    <img src="../media/CloudExplained.jpg" width="480" height="270" alt="The Cloud Explained" 
-                    title="No video playback. Update browser, enable Javascript, or install Flash." />
-                </object>
-            </video>
-        </div>
-        <a class="close-reveal-modal">&#215;</a>
-    </div><!--end cc video container-->
+        <div id="ct" class="reveal-modal">
+             <div class="centered_vid">
+                <h1>Concert Talent</h1>
+                <p style="text-align:left">Beta site for validating market fit of new online service.<br />
+                    <ul class="icons">
+                        <li class="icon" style="text-align:left"><i class="icon-twitter"></i>built on Twitter Bootstrap and Flask (a Python framework).</li>
+                        <li class="icon" style="text-align:left"><i class="icon-fullscreen"></i>mobile-ready, responsive design adjusts dynamically to accommodate any screen-size.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-user"></i>user authentication and profiles.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-envelope"></i>Mailchimp opt-in form for easy list management.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-google-plus"></i>Google web fonts, and Font-Awesome icons.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-bar-chart"></i>Google Analytics integration.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-cloud"></i>deployed on Amazon EC2, S3, Route53, and CloudFront for solid performance and scalability internationally.</li>
+                    </ul>
+                </p>
+            </div>
+            <a class="close-reveal-modal"><small>close</small> &#215;</a>
+        </div><!--end ct video container-->
 
 
-    <div id="ct" class="reveal-modal">
-         <div class="center">
-        <h1>Concert Talent</h1>
-            <video width="480" height="270" poster="../media/CloudExplained.jpg" controls="controls" preload="none">
-                <!-- MP4 source must come first for iOS -->
-                <source type="video/mp4" src="../media/CloudExplained480x320.mp4" />
-                <!-- WebM for Firefox 4 and Opera -->
-                <source type="video/webm" src="../media/CloudExplained640x480.webm" />
-                <!-- Fallback flash player for no-HTML5 browsers with JavaScript turned off -->
-                <object width="480" height="270" type="application/x-shockwave-flash" data="../build/flashmediaelement.swf">                 
-                    <param name="movie" value="../build/flashmediaelement.swf" /> 
-                    <param name="flashvars" value="controls=true&amp;file=../media/CloudExplained480x320.mp4" />
-                    <!-- Image fall back for non-HTML5 browser with JavaScript turned off and no Flash player installed -->
-                    <img src="../media/CloudExplained.jpg" width="480" height="270" alt="The Cloud Explained" 
-                    title="No video playback. Update browser, enable Javascript, or install Flash." />
-                </object>         
-            </video>
-        </div>
-        <a class="close-reveal-modal">&#215;</a>
-    </div><!--end ct video container-->
+        <div id="cj" class="reveal-modal">
+             <div class="centered_vid">
+                <h1>Cajagua</h1>
+                <p style="text-align:left">Informational site for a boxed water product.<br />
+                    <ul class="icons">
+                        <li class="icon" style="text-align:left"><i class="icon-picture"></i>custom branding and logo design.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-fullscreen"></i>adjusts dynamically to accommodate any screen-size and mobile devices.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-globe"></i>Internationalization and Spanish-English copywriting translations.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-user"></i>user authentication and profiles.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-bar-chart"></i>Google Analytics and Webmaster Tools integration.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-cloud"></i>deployed on Amazon's infrastructure for solid performance and scalability in every country on the planet.</li>
+                    </ul>
+                </p>
+            </div>
+            <a class="close-reveal-modal"><small>close</small> &#215;</a>
+        </div><!--end cj video modal-->
 
 
-    <div id="cj" class="reveal-modal">
-         <div class="center">
-        <h1>Cajagua</h1>
-            <video width="480" height="270" poster="../media/CloudExplained.jpg" controls="controls" preload="none">
-                <!-- MP4 source must come first for iOS -->
-                <source type="video/mp4" src="../media/CloudExplained480x320.mp4" />
-                <!-- WebM for Firefox 4 and Opera -->
-                <source type="video/webm" src="../media/CloudExplained640x480.webm" />
-                <!-- Fallback flash player for no-HTML5 browsers with JavaScript turned off -->
-                <object width="480" height="270" type="application/x-shockwave-flash" data="../build/flashmediaelement.swf">                 
-                    <param name="movie" value="../build/flashmediaelement.swf" /> 
-                    <param name="flashvars" value="controls=true&amp;file=../media/CloudExplained480x320.mp4" />
-                    <!-- Image fall back for non-HTML5 browser with JavaScript turned off and no Flash player installed -->
-                    <img src="../media/CloudExplained.jpg" width="480" height="270" alt="The Cloud Explained" 
-                    title="No video playback. Update browser, enable Javascript, or install Flash." />
-                </object>
-            </video>
-        </div>
-        <a class="close-reveal-modal">&#215;</a>
-    </div><!--end cj video modal-->
+        <div id="bj" class="reveal-modal">
+             <div class="centered_vid">
+                <h1>Babajala</h1>
+                <p style="text-align:left">WordPress e-commerce site (iTunes gift cards).<br />
+                    <ul class="icons">
+                        <li class="icon" style="text-align:left"><i class="icon-fullscreen"></i>responsive design adjusts dynamically to accommodate any screen-size, including mobile devices.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-money"></i>Paypal integration.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-gift"></i>gift card purchases; secure digital media downloads.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-phone"></i>SMS (text messaging) campaign opt-in.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-cloud"></i>deployed on Amazon EC2, S3, Route53, and CloudFront for robust performance and security.</li>
+                    </ul>
+                </p>
+            </div>
+            <a class="close-reveal-modal"><small>close</small> &#215;</a>
+        </div><!--end bj video container-->
 
 
-    <div id="bj" class="reveal-modal">
-         <div class="center">
-        <h1>Babajala</h1>
-            <video width="480" height="270" poster="../media/CloudExplained.jpg" controls="controls" preload="none">
-                <!-- MP4 source must come first for iOS -->
-                <source type="video/mp4" src="../media/CloudExplained480x320.mp4" />
-                <!-- WebM for Firefox 4 and Opera -->
-                <source type="video/webm" src="../media/CloudExplained640x480.webm" />
-                <!-- Fallback flash player for no-HTML5 browsers with JavaScript turned off -->
-                <object width="480" height="270" type="application/x-shockwave-flash" data="../build/flashmediaelement.swf">                 
-                    <param name="movie" value="../build/flashmediaelement.swf" /> 
-                    <param name="flashvars" value="controls=true&amp;file=../media/CloudExplained480x320.mp4" />
-                    <!-- Image fall back for non-HTML5 browser with JavaScript turned off and no Flash player installed -->
-                    <img src="../media/CloudExplained.jpg" width="480" height="270" alt="The Cloud Explained" 
-                    title="No video playback. Update browser, enable Javascript, or install Flash." />
-                </object>
-            </video>
-        </div>
-        <a class="close-reveal-modal">&#215;</a>
-    </div><!--end bj video container-->
+        <div id="wmp" class="reveal-modal">
+            <div class="centered_vid">
+                <h1>World Music Partners</h1>
+                    <p style="text-align:left">Informational site for talent agency.<br />
+                    <ul class="icons">
+                        <li class="icon" style="text-align:left"><i class="icon-picture"></i>custom branding and logo design.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-fullscreen"></i>adjusts dynamically to accommodate any screen-size and all mobile devices.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-user"></i>user authentication and profiles.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-bar-chart"></i>Google Analytics and Webmaster Tools integration.</li>
+                        <li class="icon" style="text-align:left"><i class="icon-cloud"></i>deployed on Google's infrastructure for improved SEO, faster page loads, and translation utilities.</li>
+                    </ul>
+                </p>
 
+            </div>
+            <a class="close-reveal-modal"><small>close</small> &#215;</a>
+        </div><!--end wmp video container-->
 
-    <div id="wmp" class="reveal-modal">
-         <div class="center">
-        <h1>World Music Partners</h1>
-            <video width="480" height="270" poster="../media/CloudExplained.jpg" controls="controls" preload="none">
-                <!-- MP4 source must come first for iOS -->
-                <source type="video/mp4" src="../media/CloudExplained480x320.mp4" />
-                <!-- WebM for Firefox 4 and Opera -->
-                <source type="video/webm" src="../media/CloudExplained640x480.webm" />
-                <!-- Fallback flash player for no-HTML5 browsers with JavaScript turned off -->
-                <object width="480" height="270" type="application/x-shockwave-flash" data="../build/flashmediaelement.swf">                 
-                    <param name="movie" value="../build/flashmediaelement.swf" /> 
-                    <param name="flashvars" value="controls=true&amp;file=../media/CloudExplained480x320.mp4" />
-                    <!-- Image fall back for non-HTML5 browser with JavaScript turned off and no Flash player installed -->
-                    <img src="../media/CloudExplained.jpg" width="480" height="270" alt="The Cloud Explained" 
-                    title="No video playback. Update browser, enable Javascript, or install Flash." />
-                </object>
-            </video>
-        </div>
-        <a class="close-reveal-modal">&#215;</a>
-    </div><!--end wmp video container-->
+        <div class="clear_both"></div>
 
-    <div class="clear_both"></div>
-
-    <footer>
-        <br /><br />&copy; 2011 BlogBlimp. All rights reserved. Made with love in Los Angeles, CA.<br />
-        Ingredients: 100% organic, cage-free <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fblogblimp.com%2Fanydevice%2Fanywhere%2Fportfolio.html">validated HTML5</a> and 11 secret herbs and spices.<br />  
-    </footer>
+        <footer>
+            <p  style="text-align:center"><small>&copy; 2011 BlogBlimp. All rights reserved. Made with love in Los Angeles, CA.<br />
+            Ingredients: 100% organic, cage-free <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fblogblimp.com%2Fanydevice%2Fanywhere%2Fportfolio.html">validated HTML5</a> and 11 secret herbs and spices.</small></p><br /> 
+        </footer>
 
     </div><!--pagewrapper-->
 
@@ -351,18 +318,11 @@
         });
     </script>
 
-    <script>
-       // Crazy Egg
-       setTimeout(function(){var a=document.createElement("script");
-       var b=document.getElementsByTagName('script')[0];
-       a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/6832.js?"+Math.floor(new Date().getTime()/3600000);
-       a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-    </script>
-
-    <!--Clicky-->
     <script src="//static.getclicky.com/js"></script>
     <script>try{ clicky.init(66520566); }catch(e){}</script>
-    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66520566ns.gif" /></p></noscript>
+    <noscript>
+        <p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66520566ns.gif" /></p>
+    </noscript>
 
 </body>
 </html>
