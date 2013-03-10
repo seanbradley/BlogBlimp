@@ -8,7 +8,9 @@
 
 This is the company website for <http://blogblimp.com>.
 
-The BlogBlimp logo (i.e., the blimp), all original artwork, and original written copy pertaining specifically to BlogBlimp are proprietary and may not be duplicated.  However you're free to clone this repo and refactor the code therein and incorporate your own styling to generate another website with similar functionality_.  Do not replicate any styling or brand related features--i.e., visual or written elements--of the BlogBlimp website on your own URL without the express written permission to do so.  Attribution / credit is appreciated but not required.
+All code is available via MIT license.
+
+However, please note, the BlogBlimp logo (i.e., the blimp), all original artwork, and original written copy pertaining specifically to BlogBlimp are proprietary and may not be duplicated.  However, you're free to clone this repo and refactor the code therein and incorporate your own styling to generate another website with similar functionality.  Please do not replicate any proprietary styling or brand related features--i.e., visual or written elements--of the BlogBlimp website on your own URL without the express written permission to do so.  Attribution / credit is appreciated but not required.
 
 ------------------------------------------------------------------------
 
@@ -20,7 +22,7 @@ The site's theme is comprised of simple static HTML5 pages that leverage Javascr
 
 ##NOTES ON USING VIDEO IN YOUR PORTFOLIO PAGE
 
-On the "Portfolio" page, embedded text in the drop-down modal can be easily switched to embedded video.  See comments in portfolio.html.  Videos can be stored locally in the *media* folder.  See below for faster video deliver via a CDN.
+On the "Portfolio" page, embedded text in the drop-down modal can be easily switched to embedded video.  See comments in portfolio.html.  Videos can be stored locally in the *media* folder.  See below for faster video delivery via a CDN.
 
 
 ##NOTES ON DEPLOYMENT
