@@ -8,7 +8,7 @@
 
 This is the company website for <http://blogblimp.com>.
 
-The BlogBlimp logo (i.e., the blimp), all original artwork, and original written copy pertaining specifically to BlogBlimp are proprietary and may not be duplicated.  However you're free to clone this repo and refactor the code therein and incorporate your own styling to generate another website with similar _functionality_.  Do not replicate any styling or brand related features--i.e., visual or written elements--of the BlogBlimp website on your own URL without the express written permission to do so.
+The BlogBlimp logo (i.e., the blimp), all original artwork, and original written copy pertaining specifically to BlogBlimp are proprietary and may not be duplicated.  However you're free to clone this repo and refactor the code therein and incorporate your own styling to generate another website with similar functionality_.  Do not replicate any styling or brand related features--i.e., visual or written elements--of the BlogBlimp website on your own URL without the express written permission to do so.  Attribution / credit is appreciated but not required.
 
 ------------------------------------------------------------------------
 
@@ -18,11 +18,17 @@ The site's theme is comprised of simple static HTML5 pages that leverage Javascr
 
 ------------------------------------------------------------------------
 
-##A NOTE ON VIDEOS / DEPLOYMENT
+##NOTES ON USING VIDEO IN YOUR PORTFOLIO PAGE
 
-The video which presently plays for each thumbnail is for demonstration purposes only.  Videos can be stored locally in the *anydevice/media* folder.  Our production site is deployed on AWS, and uses Route53 for its Domain Name Server. For its Content Delivery Network, video and various scripts are distributed via CloudFront (via http://awesome.blogblimp.com).  Serving the videos (or any static files or scripts) via AWS is simply a matter of uploading them to S3, and changing the URL within the appropriate HTML files.
+On the "Portfolio" page, embedded text in the drop-down modal can be easily switched to embedded video.  See comments in portfolio.html.  Videos can be stored locally in the *media* folder.  See below for faster video deliver via a CDN.
 
-On our "to do" list: preparing unique videos for each modal, and enabling dynamic resizing of the modals and the MediaElement.js player within them. This was one of the first sites we built.  It has a lot of cruft and an awkward directory structure; its presently being optimized / refactored.
+
+##NOTES ON DEPLOYMENT
+
+Our production site is deployed on AWS and uses Route53. For its Content Delivery Network, video and various scripts are distributed via CloudFront (via http://awesome.blogblimp.com).  Serving the videos (or any static files or scripts) via AWS is simply a matter of uploading them to S3, and changing the URL within the appropriate HTML files.
+
+##TO DO
+...preparing unique videos for each modal, and enabling dynamic resizing of the drop-down modals and the MediaElement.js player embedded within it. This was one of the first sites we built.  The site is presently being optimized / refactored.
 
 ------------------------------------------------------------------------
 
