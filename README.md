@@ -22,32 +22,28 @@ The site's theme is comprised of simple static HTML5 pages that leverage Javascr
 
 ##APP LAYOUT
 
-Presently, various scripts and stylesheets are spread out in several incongruous directories.  We're in the process of consolidating these in a more sensible and intuitive manner.  Fixing this is at the top of our TODO list.
+This was one of the first sites we built.  As such, it's a bit of a hodgepodge of pre-existing libraries and plug-ins.  Hence, various scripts and stylesheets are spread out in several incongruous directories or in unexpected places.  We're in the process of consolidating these in a more sensible and intuitive manner.  Making the location of various scripts and stylesheets more sane is at the top of our TODO list.  But, to help during that process, here's a brief overview of where stuff is presently located...
 
--build: a MediaElement player directory
--font: custom fonts and icons
--media: video assets and a few random jpegs
--scripts: Javascript for our flying blimp sprite
--src: a MediaElement player directory
--styles: various CSS files
+* build: a MediaElement player directory
+* font: custom fonts and icons
+* media: video assets and a few random jpegs
+* scripts: Javascript for our flying blimp sprite
+* src: a MediaElement player directory
+* styles: various CSS files
 
+##TO DO
 
+* optimze and refactor app structure/layout and rename variables, fix imports, and links accordingly
+* prepare unique videos for each modal in the portfolio page
+* enable dynamic resizing of the drop-down modals and the MediaElement.js player embedded within it
 
 ##NOTES ON USING VIDEO IN YOUR PORTFOLIO PAGE
 
 On the "Portfolio" page, embedded text in the drop-down modal can be easily switched to embedded video.  See comments in portfolio.html.  Videos can be stored locally in the *media* folder.  See below for faster video delivery via a CDN.
 
-
 ##NOTES ON DEPLOYMENT
 
 Our production site is deployed on AWS and uses Route53. For its Content Delivery Network, video and various scripts are distributed via CloudFront (via http://awesome.blogblimp.com).  Serving the videos (or any static files or scripts) via AWS is simply a matter of uploading them to S3, and changing the URL within the appropriate HTML files.
-
-##TO DO
--optimze and refactor app structure/layout and rename variables, fix imports, and links accordingly
--prepare unique videos for each modal in the portfolio page
--enable dynamic resizing of the drop-down modals and the MediaElement.js player embedded within it
-
-This was one of the first sites we built.  The site is presently being refactored.
 
 ------------------------------------------------------------------------
 
