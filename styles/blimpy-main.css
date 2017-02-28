@@ -1,0 +1,921 @@
+@charset="UTF-8"
+
+
+/* #####################  global styles ##################### */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ##################### body layout ##################### */
+
+
+article, details, figcaption, figure, footer, header, hgroup, menu, section { 
+    display: block;
+}
+
+header {
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#stage {
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+}
+
+#bg {
+    background: #aedfe5 url(http://awesome.blogblimp.com/images/sky1.png) 0 0 repeat-x;
+}
+
+#clouds {
+    background: transparent url(http://awesome.blogblimp.com/images/cloud.png) 305px 102px repeat-x;
+}
+
+#skyline2 {
+    background: transparent url(http://awesome.blogblimp.com/images/skyline2.png) 0 46px repeat-x;
+}
+
+#skyline1 {
+    background: transparent url(http://awesome.blogblimp.com/images/skyline1.png) 0 46px repeat-x;
+}
+
+#content {
+    margin-right: 250px;
+}
+
+div.centered
+{
+    text-align: center;
+}
+
+div.centered_vid {   
+    margin-left: auto;   
+    margin-right: auto;  
+    max-width: 480px; 
+    width:expression( document.body.clientWidth > 480? "480px": "auto" );  
+}
+
+div.centered_vid_640 {   
+    margin-left: auto;   
+    margin-right: auto;  
+    max-width: 640px; 
+    width:expression( document.body.clientWidth > 640? "640px": "auto" );  
+}
+
+div.centered table 
+{
+    margin: 0 auto; 
+    text-align: center;
+}
+
+ul {
+    padding-left: 40px;
+}
+
+ul > li.icon {
+    list-style-type: none;
+    padding: 10px;
+}
+
+/* ##################### typography ##################### */
+
+@font-face {
+    font-family: GraublauWeb;
+    font-weight: bold;
+    src: url('http://awesome.blogblimp.com/font/graublauwebbold-webfont.eot?') format('eot'), url('http://awesome.blogblimp.com/font/graublauwebbold-webfont.woff') format('woff'), url('http://awesome.blogblimp.com/font/graublauwebbold-webfont.ttf') format('truetype');
+}
+
+pre {
+    border: 0px solid silver;
+    margin: 0px 0;
+    padding: 0px;
+    font-family: Arial, Sans-Serif;
+}
+
+body {
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: 0px;
+    font-family: Cabin, Arial, Sans-Serif;
+    font-size: 1.02em;
+    line-height: 1.6em;
+    color: #2C2C36; /*medium/slightly bluish asphalt*/
+}
+
+h1, h2, h5 {
+    /*text-transform: uppercase;*/
+    font-family:GraublauWeb, Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #FF6633; /*orange*/
+}
+
+h1 {
+    font-size: 1.47em;
+    line-height: 1.2em;
+    margin: 8px 0 38px 0;
+}
+
+h2 {
+    font-size: 1.33em;
+    line-height: 1.2em;
+    margin: 8px 0px 15px 0px;
+}
+
+h3 {
+    font-family: Cabin, Arial, Sans-Serif;
+    font-size: 1.20em;
+    line-height: 1.2em;
+    margin: 8px 0px 15px 0px;
+    color: #525151; /*light asphalt*/
+}
+
+h4 {
+    font-family: GraublauWeb, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1.07em;
+    line-height: 1em;
+    margin: 8px 0px 30px 0px;
+    color: #3a9bc7; /*steel blue*/
+}
+
+h5 {
+    font-size: 1.07em;
+    line-height: 1em;
+    margin: 8px 0 15px 0;
+}
+
+h1 a, h2 a, h3 a, h4 a, h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited {
+    text-decoration: none; ! important
+    color: #3a9bc7; /*steel blue*/
+}
+
+#article1 h1, #article2 h2 {
+    text-align: -9999px;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+a {
+    color: #3a9bc7; /*steel blue*/
+    text-decoration: underline;
+} 
+
+a:visited {
+    color: #3a9bc7; /*steel blue*/
+    text-decoration: none;
+}
+
+a:hover {
+    color: #86C2DC; /*sky blue*/
+    text-decoration: underline;
+}
+
+a img {
+    border: 0;
+}
+
+footer {
+    display: block;
+    text-align: center; 
+    border-top: 1px solid #ddd;
+    padding: 15px 10px 15px 20px;
+    font-size: .9em;
+    color: #757575; /*light gray*/
+    background-color: #fff;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -moz-box-shadow: 0px 5px 3px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 5px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 3px rgba(0,0,0,0.3);
+    background: -moz-linear-gradient(top, #ffffff 60%, #cccccc 90%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%,#ffffff), color-stop(90%,#cccccc));
+}
+
+
+/* ##################### gallery for portfolio ##################### */
+
+.panel {
+    margin-bottom: 2em;
+    display: none;
+}
+
+
+.gallery { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+
+.gallery:after { 
+    clear: both;
+    content: "."; 
+    display: block; 
+    height: 0; 
+    visibility: hidden; 
+}
+
+
+.gallery li { 
+    float: left; 
+    width: 33.33333333%;
+}
+
+
+.gallery li a { 
+    display: block; 
+    margin: 5px; 
+    border: 0px solid #3c3c3c; 
+}
+
+
+.gallery li img { 
+    display: block; 
+    width: 100%; 
+    height: auto; 
+}
+
+
+/* ##################### forms and buttons ##################### */
+
+#mc-field-group {
+    padding-right: 20px; 
+    float:left;
+}
+
+#mc_embed_signup .size1of2 {
+    clear:none;
+    padding-right: 20px;
+    margin-top: 10px 
+    float:left; 
+    display:inline-block; 
+    width:auto;
+}
+
+.css3button {
+    display: inline-block;
+    width: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: Cabin, Arial, Sans-Serif;
+    color: #ffffff;
+    text-decoration: none; ! important;
+    background: -moz-linear-gradient(top, #75c1dd 0%, #658bba);
+    background: -webkit-gradient(linear, left top, left bottom, from(#75c1dd), to(#658bba));
+    border: 1px solid #335f73;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-box-shadow:
+        1px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,0.7);
+    -webkit-box-shadow:
+        1px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,0.7);
+    /*text-shadow:
+        1px -1px 0px rgba(000,000,000,0.2),
+        0px 1px 0px rgba(255,255,255,0.9);
+    */
+}
+
+.input-prompt {
+  position: absolute;
+  font-style: italic;
+  color: #aaa;
+  margin: 0.5em 0 0 1em;
+}
+
+/* ##################### media queries ##################### */
+
+@media (min-width: 980px) {
+
+    #logo {
+        background: url(http://awesome.blogblimp.com/images/bblogo.png) center top no-repeat;
+        min-height: 80px;
+    }
+
+
+    #spriteContainer  {
+        min-width:320px;
+        position:relative;
+        width:100%;
+    }
+
+    .stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 313px;
+        overflow: hidden;
+    }
+    
+    #blimp {
+        background: transparent url(http://awesome.blogblimp.com/images/bird-forward-back.png) 0 0 no-repeat;
+        position: absolute;
+        top: 320px;
+        left: 65px;
+        width: 180px;
+        height: 123px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+
+    #headerContent {
+        padding: 0px 40px 30px;
+    }
+
+    #pusher {
+        padding: 340px 0px 0px;
+    }
+    
+    #article1, #article2 {
+        padding: 0px 40px 30px;
+    }
+    
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+    #logo {
+        background: url(http://awesome.blogblimp.com/images/bblogo.png) center top no-repeat;
+        min-height: 80px;
+    }
+
+    #spriteContainer  {
+        min-width:320px;
+        /* padding-top:280px; */
+        position:relative;
+        width:100%;
+    }
+
+    .stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 979px;
+        height: 313px;
+        overflow: hidden;
+    }
+    
+    #blimp {
+        background: transparent url(http://awesome.blogblimp.com/images/bird-forward-back.png) 0 0 no-repeat;
+        position: absolute;
+        top: 320px;
+        left: 65px;
+        width: 180px;
+        height: 123px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+        
+    #headerContent {
+        padding: 0px 40px 30px;
+    }
+    
+    #pusher {
+        padding: 340px 0px 0px;
+    }
+    
+    #article1, #article2 {
+        padding: 0px 30px 30px;
+    }
+    
+}
+
+
+/* Everything from big screen Androids to Kindles on down */
+@media (min-width: 686px) and  (max-width: 767px) {
+
+    #logo {
+        background: url(http://awesome.blogblimp.com/images/bblogo.png) center top no-repeat;
+        min-height: 80px;
+    }
+
+    #spriteContainer  {
+        min-width:280px;
+        position:relative;
+        width:100%;
+    }
+
+    .stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 767px;
+        height: 313px;
+        overflow: hidden;
+    }
+    
+    #blimp {
+        background: transparent url(http://awesome.blogblimp.com/images/bird-forward-back.png) 0 0 no-repeat;
+        position: absolute;
+        top: 320px;
+        left: 65px;
+        width: 180px;
+        height: 123px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+        
+    #headerContent {
+        padding: 0px 40px 30px;
+    }
+
+    #pusher {
+        padding: 340px 0px 0px;
+    }
+        
+    #article1, #article2 {
+        padding: 0px 40px 30px;
+    }
+    
+}
+
+
+@media (min-width: 601px) and (max-width: 685px) {
+
+    #logo {
+        background: url(http://awesome.blogblimp.com/images/bblogo.png) center top no-repeat;
+        min-height: 80px;
+    }
+
+    #spriteContainer  {
+        min-width:220px;
+        position:relative;
+        width:100%;
+    }
+
+    .stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 685px;
+        height: 313px;
+        overflow: hidden;
+    }
+    
+    #blimp {
+        background: transparent url(http://awesome.blogblimp.com/images/bird-forward-back.png) 0 0 no-repeat;
+        position: absolute;
+        top: 320px;
+        left: 20px;
+        width: 180px;
+        height: 123px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+    
+    #headerContent {
+        padding: 0px 40px 30px;
+    }
+
+    #pusher {
+        padding: 340px 0px 0px;
+    }
+        
+    #article1, #article2 {
+        padding: 0px 40px 30px;
+    }
+    
+}
+
+
+@media (min-width: 569px) and (max-width: 600px) {
+
+    #logo {
+        background: url(http://awesome.blogblimp.com/images/bblogo.png) center top no-repeat;
+        min-height: 80px;
+    }
+
+    #spriteContainer  {
+        min-width:180px;
+        /* padding-top:280px; */
+        position:relative;
+        width:100%;
+    }
+
+    .stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 600px;
+        height: 313px;
+        overflow: hidden;
+    }
+    
+    #blimp {
+        background: transparent url(http://awesome.blogblimp.com/images/bird-forward-back.png) 0 0 no-repeat;
+        position: absolute;
+        top: 320px;
+        left: 20px;
+        width: 180px;
+        height: 123px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+    
+    #headerContent {
+        padding: 0px 40px 30px;
+    }
+
+    #pusher {
+        padding: 340px 0px 0px;
+    }
+        
+    #article1, #article2 {
+        padding: 0px 40px 30px;
+    }
+    
+}
+    
+
+@media (min-width: 481px) and (max-width: 568px) {
+
+    #logo {
+        background: url(http://awesome.blogblimp.com/images/bblogomobile.png) center top no-repeat;
+        min-height: 80px;
+    }
+
+    #spriteContainer  {
+        min-width:180px;
+        /* padding-top:280px; */
+        position:relative;
+        width:100%;
+    }
+
+    .stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 568px;
+        height: 313px;
+        overflow: hidden;
+    }
+    
+    #blimp {
+        background: transparent url(http://awesome.blogblimp.com/images/bird-forward-back.png) 0 0 no-repeat;
+        position: absolute;
+        top: 320px;
+        left: 20px;
+        width: 180px;
+        height: 123px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+        
+    #headerContent {
+        padding: 0px 40px 30px;
+    }
+
+    #pusher {
+        padding: 340px 0px 0px;
+    }
+        
+    #article1, #article2 {
+        padding: 0px 40px 30px;
+    }
+    
+}
+
+
+@media (min-width: 321px) and (max-width: 480px) {
+
+    #logo {
+        background: url(http://awesome.blogblimp.com/images/bblogomobile.png) center top no-repeat;
+        min-height: 50px;
+    }
+
+    #spriteContainer  {
+        min-width:180px;
+        /* padding-top:280px; */
+        position:relative;
+        width:100%;
+    }
+
+    .stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 480px;
+        height: 313px;
+        overflow: hidden;
+    }
+    
+    #blimp {
+        background: transparent url(http://awesome.blogblimp.com/images/bird-forward-back.png) 0 0 no-repeat;
+        position: absolute;
+        top: 400px;
+        left: 15px;
+        width: 180px;
+        height: 123px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+    
+    #headerContent {
+        padding: 0px 20px 30px;
+    }
+
+    
+    #pusher {
+        padding: 340px 0px 0px;
+    }
+        
+    #article1, #article2 {
+        padding: 0px 40px 30px;
+    }
+    
+}
+
+
+@media (min-width: 241px) and (max-width: 320px) {
+
+    #logo {
+        background: url(http://awesome.blogblimp.com/images/bblogomobile.png) center top no-repeat;
+        min-height: 50px;
+    }
+
+    #spriteContainer  {
+        min-width:180px;
+        /* padding-top:280px; */
+        position:relative;
+        width:100%;
+    }
+
+    .stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 320px;
+        height: 313px;
+        overflow: hidden;
+    }
+
+    #blimp {
+        background: transparent url(http://awesome.blogblimp.com/images/bird-forward-back.png) 0 0 no-repeat;
+        position: absolute;
+        top: 430px;
+        left: 10px;
+        width: 180px;
+        height: 123px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+    
+    #headerContent {
+        padding: 0px 20px 30px;
+    }
+
+    
+    #pusher {
+        padding: 340px 0px 0px;
+    }
+    
+    #mc_embed_signup .size1of2 {
+        clear:both;
+        padding-right: 20px; 
+        float:left; 
+        display:inline-block; 
+        width:auto;
+        }
+    }
+        
+    #article1, #article2 {
+        padding: 0px 30px 30px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 240px) {
+
+    #logo {
+        background: url(http://awesome.blogblimp.com/images/bblogomobile.png) center top no-repeat;
+        min-height: 50px;
+    }
+
+    #spriteContainer  {
+        min-width:180px;
+        position:relative;
+        width:100%;
+    }
+
+    .stage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 280px;
+        height: 313px;
+        overflow: hidden;
+    }
+
+    #blimp {
+        background: transparent url(http://awesome.blogblimp.com/images/bird-forward-back.png) 0 0 no-repeat;
+        position: absolute;
+        top: 500px;
+        left: 5px;
+        width: 180px;
+        height: 123px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+    
+    #headerContent {
+        padding: 0px 10px 20px;
+    }
+
+    
+    #pusher {
+        padding: 340px 0px 0px;
+    }
+    
+    #mc_embed_signup .size1of2 {
+        clear:both;
+        padding-right: 20px; 
+        float:left; 
+        display:inline-block; 
+        width:auto;
+    }
+        
+    #article1, #article2 {
+        padding: 0px 20px 30px;
+    }
+    
+}
+
+
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+/*textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }*/
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+fieldset {
+  padding: 0;
+  border-width: 0; }
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+  
+/* Buttons from Skeleton.css */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 18px;
+  color: #555;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #CC6600;
+  border-color: #CC6600; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #CC6600;
+  border-color: #CC6600; }
+ 
+/*Call to Action Button*/
+.button-cta {
+  display: block;
+  position: relative;
+  margin: auto;
+  max-width: 180px !important;
+  font-weight: 600;
+} 
+
+/* ##################### flying blimp on homepage #####################  */
+
+/* Adjust this code: spRandom({top: 160, bottom: 300, left: 320, right: 480}) ...in the /scripts/jquiery.blimpy.js file to constrain the box in which the blimp div flies around   The blimp image file itself isn't moving across the skyline, but rather the #blimp div which contains the image. Changing the styling of the #blimp div in this file only impacts whether a whole or part of the blimp sprite is visible. */
