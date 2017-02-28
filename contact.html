@@ -65,108 +65,22 @@
             </p>
             <br />
             <p>
-                <form id="webform" name="webform" action="https://formspree.io/info@blogblimp.com" method="POST" target="_self" novalidate>
-                  <div class="row">
-                    <div class="six columns">
-                      <label for="name">Your legal name</label>
-                      <small>(required; please include first and last name)</small>
-                      <input class="u-full-width" placeholder="John Doe" id="name" type="text" name="name" value="">
-                      <br />
-                      <br />
-                      <label for="user_email">Your personal email</label>
-                      <small>(required)</small>
-                      <input class="u-full-width" placeholder="you@example.com" id="user_email" type="email" name="user_email" value="">
-                      <br />
-                      <br />
-                      <label for="tel">Your mobile phone</label>
-                      <small>(optional; please use numbers and dashes only)</small>
-                      <input class="u-full-width" placeholder="123-456-7890" id="tel" type="tel" name="tel" value="">
-                      <br />
-                      <br />
-                      <label for="contact_pref">Contact me via...</label>
-                      <small>(helpful; select one or more...)</small>
-                      <select class="u-full-width" id="contact_pref" name="contact_pref[]" multiple>
-                      <?php
-                        $options = array('ecorr' => 'e-mail', 'sms' => 'text message', 'voice' => 'telephone');
-                        foreach ($options as $value=>$label) {
-                            $selected = (isset($_POST['contact_pref']) && $_POST['contact_pref']==$value) ? ' selected': '';
-
-                            echo "<option value=\"{$value}\" {$selected}>{$label}</option>";
-
-                        }                                      
-                      ?>
-                      </select>
-                      <br />
-                      <br />
-                      <label for="poi_type">Seeking info on...</label>
-                      <small>(helpful;select one or more...)</small>
-                      <select class="u-full-width" id="poi_type" name="poi_type[]" multiple>
-                      <?php
-                        $options = array('cxo' => 'A CXO / corporate officer', 'investor' => 'An investor / VC', 'dev' => 'A coder / web developer / software engineer', 'multi' => 'Multiple individuals', 'anon' => 'Wolfskill general info');
-                        $selected = 'selected="selected"';
-                        foreach ($options as $value=>$label) {
-                          if (in_array($value, $options)) { 
-                            echo "<option value=\"{$value}\" {$selected}>{$label}</option>";
-                          }                      
-                          else {
-                            echo "<option value=\"{$value}\">{$label}</option>";
-                          }
-                        }                                      
-                      ?>
-                      </select>
-                      <br />
-                      <br />                                     
-                      <label for="poi_name">Send me a TRUST REPORT for a <i>person</i></label>
-                      <small>(optional; name of primary person of interest)</small>
-                      <input class="u-full-width" placeholder="person name" id="poi_name" type="text" name="poi_name" value="">
-                      <br /> 
-                      <br />
-                      <label for="poi_company">Send me a TRUST REPORT for a <i>company</i></label>
-                      <small>(optional)</small>
-                      <input class="u-full-width" placeholder="company name" id="poi_company" type="text" name="poi_company" value="">
-                      <br /> 
-                      <br />
-                      <label for="repo">Send me a TECH REPORT for <i>code</i></label>
-                      <small>(optional; requires code repository name)</small>
-                      <input class="u-full-width" placeholder="repo name" id="repo" type="text" name="repo" value="">
-                      <br /> 
-                      <br />
-                      <label for="repo_loc">The code is located on...</label>
-                      <small>(optional)</small>                
-                      <select class="u-full-width" id="repo_loc" name="repo_loc[]" multiple>
-                      <?php
-                        $options = array('github' => 'GitHub', 'bitbucket' => 'Bitbucket', 'aws' => 'AWS/S3', 'priv' => 'Private', 'unknown' => 'Unknown', 'none' => 'No Version Control');
-                        $selected = 'selected="selected"';
-                        foreach ($options as $value=>$label) {
-                          if (in_array($value, $options) && isset($repo_loc)) { 
-                            echo "<option value=\"{$value}\" {$selected}>{$label}</option>";
-                          }                      
-                          else {
-                            echo "<option value=\"{$value}\">{$label}</option>";
-                          }
-                        }                                
-                      ?>
-                      </select>  
-                      <br />
-                      <br /> 
-                      <label for="addl_info">Additional instructions...</label>
-                      <small>(optional)</small>
-                      <textarea class="u-full-width" placeholder="additional info" id="addl_info" name="addl_info"></textarea>
-                      <br />
-                      <label class="antispam">This field is to trick spam robots only.<br />Please leave empty.</label>
-                      <input class="u-full-width antispam" id="verify_human" name="verify_human">
-                      <br />
-                      <br />
-                      
-                      <input class="button button-primary button-cta" value="HUNT FOR DATA" type="submit" name="submit">
-                      
-                      <br />                  
-                      <br />
-                      <input type="button" value="Clear Form / Start Over" onclick="clear_form_elements(this.form)" />
-
+                 <form action="https://formspree.io/info@blogblimp.com" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div class="mc-field-group size1of2">
+                        <label for="mce-NAME"></label>
+                        <input type="name" title="Enter your name..." value="" name="NAME" class="required email" id="mce-NAME" style="padding:10px">
                     </div>
-                  </div>
-
+                    <div class="mc-field-group size1of2">
+                        <label for="mce-EMAIL"></label>
+                        <input type="email" title="Enter your e-mail..." value="" name="EMAIL" class="required email" id="mce-EMAIL" style="padding:10px">
+                    </div>
+                    <div class="mc-field-group size1of2">
+                        <div id="mce-responses">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>  
+                        <input type="submit" value="CLICK FOR ELEVATED SERVICE!" name="subscribe" id="mc-embedded-subscribe" class="css3button">
+                    </div>
                 </form>
             </p>
             <p>
