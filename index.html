@@ -18,6 +18,13 @@
     <script src="http://awesome.blogblimp.com/scripts/jquery-1.6.3.min.js"></script>
     <script src="http://awesome.blogblimp.com/scripts/jquery.spritely-0.6.js"></script>
     <script src="http://awesome.blogblimp.com/scripts/jquery-ui-1.7.2.blogblimp.custom.min.js"></script>
+    <script>
+        $('form').submit(function(){
+            if($('input#website').val().length != 0){
+                return false;
+            }
+        });
+    </script>
     <link href="http://awesome.blogblimp.com/stylesheets/blimpy-main.css" rel="stylesheet" media="all" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet" type="text/css" />
@@ -83,7 +90,8 @@
                         <form action="http://bravoflix.us2.list-manage.com/subscribe/post?u=0e40975fa3e483eb423fe9e3f&amp;id=8f476b70e5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                             <div class="mc-field-group size1of2">
                                 <label for="mce-EMAIL"></label>
-                                <input type="email" title="Enter your e-mail..." value="" name="EMAIL" class="required email" id="mce-EMAIL" style="padding:10px">
+                                <input class="required email" id="mce-EMAIL" type="email" title="Enter your e-mail..." value="" name="EMAIL" style="padding:10px">
+                                <input class="required email" id="mce-EMAIL" type="text" name="website" value="" />
                             </div>
                             <div class="mc-field-group size1of2">
                                 <div id="mce-responses">
