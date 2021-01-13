@@ -1,10 +1,10 @@
-#BLOGBLIMP
+# BLOGBLIMP
 
-###HTML5 website theme with responsive video gallery
+### HTML5 website theme with responsive video gallery
 
 ------------------------------------------------------------------------
 
-##LICENSE
+## LICENSE
 
 This is the company website for <http://blogblimp.com>.
 
@@ -14,41 +14,45 @@ However, please note, the BlogBlimp logo (i.e., the blimp), all original artwork
 
 ------------------------------------------------------------------------
 
-##ACKNOWLEDGEMENTS
+## ACKNOWLEDGEMENTS
 
-The site's theme is comprised of simple static HTML5 pages that leverage Javascript and JQuery, but also includes a hybridized version of the PhotoSwipe gallery by CodeComputerLove and the Reveal modal from Zurb.  These two scripts were combined to create a cool responsive gallery of thumbnails; clicking on any thumbnail within the gallery activates activates a dropdown modal pertaining to that thumbnail; in each respective modal that is activated, a related video can be embedded.  The awesome MediaElement.js player by John Dyer delivers HTML5 video throughout the site with Flash and Silverlight "fall-forward", enabling the video to play on nearly any device and on older browsers.  Additionally, an elaborately customized version of the visually fun Spritely plugin by Artlogic is used to create a catchy animation on the Home page.
+An elaborately customized version of the visually fun Spritely plugin by Artlogic is used to create a catchy animation on the Home page.
+
+The site's theme is comprised of simple static HTML5 pages that leverage Javascript and JQuery, but also includes a hybridized version of the PhotoSwipe gallery by CodeComputerLove and the Reveal modal from Zurb.  These two scripts were combined to create a cool responsive gallery of thumbnails; clicking on any thumbnail within the gallery activates activates a dropdown modal pertaining to that thumbnail; in each respective modal that is activated, a related video can be embedded.  
+
+Formerly, the MediaElement.js player by John Dyer delivered HTML5 video throughout the site with Flash and Silverlight "fall-forward", enabling the video to play on nearly any device and on older browsers. That's since been deprecated and swapped with a simple YouTube embed.
 
 ------------------------------------------------------------------------
 
-##APP LAYOUT
+## ARCHITECTURE
 
-This was one of the first sites we built.  As such, it's a bit of a hodgepodge of pre-existing libraries and plug-ins.  Hence, various scripts and stylesheets are spread out in several incongruous directories or in unexpected places.  We're in the process of consolidating these in a more sensible and intuitive manner.  Making the location of various scripts and stylesheets more sane is at the top of our TODO list.  But, to help during that process, here's a brief overview of where stuff is presently located...
+The site is deployed on an AWS VPC, leveraging an Ubuntu EC2 instance with Apache behind an ELB set-up with ACM; DNS is via Route53. CDN via CloudFront. Additional storage for static assets and logs in S3. The site is designed to be visually unique and non-boilerplate, is surprisingly performant on all devices, everything validates well, and the infra choices make it easily scalable.
 
-* build: a MediaElement player directory
-* font: custom fonts and icons
-* media: video assets and a few random jpegs
-* scripts: Javascript for our flying blimp sprite
-* src: a MediaElement player directory
+
+## APP STRUCTURE
+
+This was one of the very first sites BlogBlimp ever built.  As such, it's a bit of a hodgepodge of pre-existing libraries and plug-ins...and layers of solutioning have accreted.  Hence, various scripts and stylesheets are spread out in several incongruous directories or in unexpected places.  We're in the process of consolidating these in a more sensible and intuitive manner.  Making the location of various scripts and stylesheets more sane is at the top of our TODO list.  But, to help during that process, here's a brief overview of where stuff is presently located...
+
 * styles: various CSS files
+* font: custom fonts and icons
+* scripts: Javascript for our flying blimp sprite
+* media: video assets and a few random jpegs
 
-##TO DO
+## CHANGELOG (JAN 2021)
+
+* build and src directories for the MediaElement player have been deprecated
+* URLs for static assets have been changed to accommodate SSL
+
+## TO DO
 
 * optimze and refactor app structure/layout and rename variables, fix imports, and links accordingly
-* prepare unique videos for each modal in the portfolio page
-* enable dynamic resizing of the drop-down modals and the MediaElement.js player embedded within it
+* prepare unique explainer vids for and enable dynamic resizing of the drop-down modals (which would contain those vids) in the portfolio page
 
-##NOTES ON USING VIDEO IN YOUR PORTFOLIO PAGE
-
-On the "Portfolio" page, embedded text in the drop-down modal can be easily switched to embedded video.  See comments in portfolio.html.  Videos can be stored locally in the *media* folder.  See below for faster video delivery via a CDN.
-
-##NOTES ON DEPLOYMENT
-
-Our production site is deployed on AWS and uses Route53. For its Content Delivery Network, video and various scripts are distributed via CloudFront (via http://awesome.blogblimp.com).  Serving the videos (or any static files or scripts) via AWS is simply a matter of uploading them to S3, and changing the URL within the appropriate HTML files.
 
 ------------------------------------------------------------------------
 
-##CONTACT
+## CONTACT
 
-Feel free to e-mail me and make suggestions or ask questions.  Your input is highly valued:
+Feel free to e-mail BlogBlimp and make suggestions or ask questions.  Your input is highly valued. Email your comments and inquiries to:
 
 sean@blogblimp.com
