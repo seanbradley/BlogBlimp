@@ -29,19 +29,19 @@ header {
 }
 
 #bg {
-    background: #aedfe5 url(http://awesome.blogblimp.com/images/misc/sky1.png) 0 0 repeat-x;
+    background: #aedfe5 url(https://awesome.blogblimp.com/images/misc/sky1.png) 0 0 repeat-x;
 }
 
 #clouds {
-    background: transparent url(http://awesome.blogblimp.com/images/misc/cloud.png) 305px 102px repeat-x;
+    background: transparent url(https://awesome.blogblimp.com/images/misc/cloud.png) 305px 102px repeat-x;
 }
 
 #skyline2 {
-    background: transparent url(http://awesome.blogblimp.com/images/misc/hill2.png) 0 46px repeat-x;
+    background: transparent url(https://awesome.blogblimp.com/images/misc/hill2.png) 0 46px repeat-x;
 }
 
 #skyline1 {
-    background: transparent url(http://awesome.blogblimp.com/images/misc/hill-with-windmill.png) 0 46px repeat-x;
+    background: transparent url(https://awesome.blogblimp.com/images/misc/hill-with-windmill.png) 0 46px repeat-x;
 }
 
 #content {
@@ -302,7 +302,7 @@ footer {
 @media (min-width: 980px) {
 
     #logo {
-        background: url(http://awesome.blogblimp.com/images/misc/bblogo.png) center top no-repeat;
+        background: url(https://awesome.blogblimp.com/images/misc/bblogo.png) center top no-repeat;
         min-height: 80px;
     }
 
@@ -323,7 +323,7 @@ footer {
     }
     
     #blimp {
-        background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
+        background: transparent url(https://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
         position: absolute;
         top: 320px;
         left: 65px;
@@ -351,7 +351,7 @@ footer {
 @media (min-width: 768px) and (max-width: 979px) {
 
     #logo {
-        background: url(http://awesome.blogblimp.com/images/misc/bblogo.png) center top no-repeat;
+        background: url(https://awesome.blogblimp.com/images/misc/bblogo.png) center top no-repeat;
         min-height: 80px;
     }
 
@@ -373,7 +373,7 @@ footer {
     }
     
     #blimp {
-        background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
+        background: transparent url(https://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
         position: absolute;
         top: 320px;
         left: 65px;
@@ -402,7 +402,7 @@ footer {
 @media (min-width: 686px) and  (max-width: 767px) {
 
     #logo {
-        background: url(http://awesome.blogblimp.com/images/misc/bblogo.png) center top no-repeat;
+        background: url(https://awesome.blogblimp.com/images/misc/bblogo.png) center top no-repeat;
         min-height: 80px;
     }
 
@@ -423,7 +423,7 @@ footer {
     }
     
     #blimp {
-        background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
+        background: transparent url(https://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
         position: absolute;
         top: 320px;
         left: 65px;
@@ -451,7 +451,7 @@ footer {
 @media (min-width: 601px) and (max-width: 685px) {
 
     #logo {
-        background: url(http://awesome.blogblimp.com/images/misc/bblogo.png) center top no-repeat;
+        background: url(https://awesome.blogblimp.com/images/misc/bblogo.png) center top no-repeat;
         min-height: 80px;
     }
 
@@ -472,7 +472,7 @@ footer {
     }
     
     #blimp {
-        background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
+        background: transparent url(https://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
         position: absolute;
         top: 320px;
         left: 20px;
@@ -500,7 +500,7 @@ footer {
 @media (min-width: 569px) and (max-width: 600px) {
 
     #logo {
-        background: url(http://awesome.blogblimp.com/images/misc/bblogo.png) center top no-repeat;
+        background: url(https://awesome.blogblimp.com/images/misc/bblogo.png) center top no-repeat;
         min-height: 80px;
     }
 
@@ -522,7 +522,7 @@ footer {
     }
     
     #blimp {
-        background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
+        background: transparent url(https://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
         position: absolute;
         top: 320px;
         left: 20px;
@@ -550,7 +550,7 @@ footer {
 @media (min-width: 481px) and (max-width: 568px) {
 
     #logo {
-        background: url(http://awesome.blogblimp.com/images/misc/bblogomobile.png) center top no-repeat;
+        background: url(https://awesome.blogblimp.com/images/misc/bblogomobile.png) center top no-repeat;
         min-height: 80px;
     }
 
@@ -572,7 +572,7 @@ footer {
     }
     
     #blimp {
-        background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
+        background: transparent url(https://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
         position: absolute;
         top: 320px;
         left: 20px;
@@ -600,7 +600,7 @@ footer {
 @media (min-width: 321px) and (max-width: 480px) {
 
     #logo {
-        background: url(http://awesome.blogblimp.com/images/misc/bblogomobile.png) center top no-repeat;
+        background: url(https://awesome.blogblimp.com/images/misc/bblogomobile.png) center top no-repeat;
         min-height: 50px;
     }
 
@@ -622,7 +622,7 @@ footer {
     }
     
     #blimp {
-        background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
+        background: transparent url(https://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
         position: absolute;
         top: 400px;
         left: 15px;
@@ -651,7 +651,7 @@ footer {
 @media (min-width: 241px) and (max-width: 320px) {
 
     #logo {
-        background: url(http://awesome.blogblimp.com/images/misc/bblogomobile.png) center top no-repeat;
+        background: url(https://awesome.blogblimp.com/images/misc/bblogomobile.png) center top no-repeat;
         min-height: 50px;
     }
 
@@ -673,7 +673,7 @@ footer {
     }
 
     #blimp {
-        background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
+        background: transparent url(https://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
         position: absolute;
         top: 430px;
         left: 10px;
@@ -711,7 +711,7 @@ footer {
 @media only screen and (max-width: 240px) {
 
     #logo {
-        background: url(http://awesome.blogblimp.com/images/misc/bblogomobile.png) center top no-repeat;
+        background: url(https://awesome.blogblimp.com/images/misc/bblogomobile.png) center top no-repeat;
         min-height: 50px;
     }
 
@@ -732,7 +732,7 @@ footer {
     }
 
     #blimp {
-        background: transparent url(http://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
+        background: transparent url(https://awesome.blogblimp.com/images/misc/bird-forward-back.png) 0 0 no-repeat;
         position: absolute;
         top: 500px;
         left: 5px;

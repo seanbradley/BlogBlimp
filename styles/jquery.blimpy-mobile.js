@@ -1,7 +1,7 @@
 (function($) {
             $(document).ready(function() {
                 $('#logo').click(function() {
-                    document.location.href = 'http://awesome.blogblimp.com/images/misc/bblogomobile.png';
+                    document.location.href = 'https://awesome.blogblimp.com/images/misc/bblogomobile.png';
                 });
             
                 $('#bird')
