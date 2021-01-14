@@ -153,7 +153,7 @@
                             <li><i class="fas fa-lightbulb"></i>&nbsp;<strong>prototyping</strong>&mdash;ideation, wireframing, MVPs (minimal viable products) for investor demos</li>
                             <li><i class="fas fa-hand-holding-usd"></i>&nbsp;<strong>validating</strong>&mdash;market fit surveys, focus groups, social network campaigns, targeted ads and landing pages</li>
                             <li><i class="fas fa-chart-line"></i>&nbsp;<strong>forecasting</strong>&mdash;competitive business intelligence, pricing and revenue modelling</li>
-                            <li><i class="fas fa-robot"></i></i></i>&nbsp;<strong>analyzing</strong>&mdash;data mining, machine learning, artificial intelligence</li>
+                            <li><i class="fas fa-robot"></i>&nbsp;<strong>analyzing</strong>&mdash;data mining, machine learning, artificial intelligence</li>
                             <li><i class="fas fa-building"></i>&nbsp;<strong>architecting</strong>&mdash;scrum-driven build outs, scale-ups for primetime web traffic</li>
                             <li><i class="fas fa-stethoscope"></i>&nbsp;<strong>testing</strong>&mdash;debugging, unittesting, integration testing, load testing, benchmarking</li>
                             <li><i class="fas fa-eye"></i>&nbsp;<strong>frontend</strong>&mdash;tuning UX with heat maps, card sorting, split-testing, responsive designs optimized for sign-ups and sales conversions</li>
@@ -226,19 +226,16 @@
         });
     </script>
     
-    <!--GA-->
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-28024713-1']);
-        _gaq.push(['_setDomainName', 'blogblimp.com']);
-        _gaq.push(['_trackPageview']);
+    <!--GA4 (gtag.js)-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=258833126"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
+	  gtag('config', '258833126');
+	</script>
+
 
 </body>
 </html>
