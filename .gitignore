@@ -28,7 +28,8 @@
 .DS_Store?
 ._*
 *~
-*~/
 connect.sh
 gitflow
 gitflow-installer.sh
+
+echo debug.log >> .gitignore $ git rm --cached debug.log rm 'debug.log' $ git commit -m "Start ignoring debug.log" 
