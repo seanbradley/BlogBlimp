@@ -26,10 +26,25 @@ Formerly, the MediaElement.js player by John Dyer delivered HTML5 video througho
 
 ## ARCHITECTURE
 
-The site is deployed on an AWS VPC, leveraging an Ubuntu EC2 instance with Apache behind an ELB set-up with ACM; DNS is via Route53. CDN via CloudFront. Additional storage for static assets and logs in S3. The site is designed to be visually unique and non-boilerplate, is surprisingly performant on all devices, everything validates well, and the infra choices make it easily scalable.
+The site is designed to be visually unique and non-boilerplate. For its age, it is surprisingly performant on all devices, everything validates well, and the infra choices make it easily scalable.
 
+In summary, the AWS services used are:
 
-## APP STRUCTURE
+* Route53
+* ACM (with two certs)
+* Global Accelerator
+* ALB
+* Target Group
+* VPC (with one subnet)
+* EC2
+* S3 (static content and logs)
+* CloudFront (for static CDN)
+
+Granted--this is a lot for a simple informational site, but the point in the initial building of it was to explore now to wire these services together.
+
+------------------------------------------------------------------------
+
+## DIRECTORY STRUCTURE
 
 This was one of the very first sites BlogBlimp ever built.  As such, it's a bit of a hodgepodge of pre-existing libraries and plug-ins...and layers of solutioning have accreted.  Hence, various scripts and stylesheets are spread out in several incongruous directories or in unexpected places.  We're in the process of consolidating these in a more sensible and intuitive manner.  Making the location of various scripts and stylesheets more sane is at the top of our TODO list.  But, to help during that process, here's a brief overview of where stuff is presently located...
 

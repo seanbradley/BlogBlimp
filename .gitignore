@@ -27,6 +27,7 @@
 .DS_Store
 .DS_Store?
 ._*
+*~
 connect.sh
 gitflow
 gitflow-installer.sh
