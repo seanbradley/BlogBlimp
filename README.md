@@ -53,16 +53,19 @@ This was one of the very first sites BlogBlimp ever built.  As such, it's a bit 
 * scripts: Javascript for our flying blimp sprite
 * media: video assets and a few random jpegs
 
+------------------------------------------------------------------------
+
 ## CHANGELOG (JAN 2021)
 
-* build and src directories for the MediaElement player have been deprecated
+* build, media, and src directories (mostly for the MediaElement player and Silverlight) have been deprecated
 * URLs for static assets have been changed to accommodate SSL
+
+------------------------------------------------------------------------
 
 ## TO DO
 
 * optimze and refactor app structure/layout and rename variables, fix imports, and links accordingly
 * prepare unique explainer vids for and enable dynamic resizing of the drop-down modals (which would contain those vids) in the portfolio page
-
 
 ------------------------------------------------------------------------
 
