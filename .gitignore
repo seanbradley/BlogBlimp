@@ -1,18 +1,29 @@
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-*.mp4
-*.fla
-*.f4v
-*.m3u8
-*.py_bak
-*.py~
-*.pyc
-*.html_bak
-*.html~
+# Python bytecode:
+*.py[co]
+
+# Packaging files:
+*.egg*
+
+# Editor temp files:
+*.swp
+*~
+
+# Sphinx docs:
+build
+
+# SQLite3 database files:
+*.db
+
+# Logs:
+*.log
+
+# Backup files:
+*_bak
+*.bak
+*_old
+*.old
+
+# Compressed files:
 *.7z
 *.dmg
 *.gz
@@ -21,15 +32,38 @@
 *.rar
 *.tar
 *.zip
-*.log
-*.sql
-*.sqlite
-.DS_Store
-.DS_Store?
-._*
-*~
-connect.sh
-gitflow
-gitflow-installer.sh
 
-echo debug.log >> .gitignore $ git rm --cached debug.log rm 'debug.log' $ git commit -m "Start ignoring debug.log" 
+# Secret keys:
+*secret*
+*.tfvars
+admin_password
+success_deploy.json
+github_resource_permissions.json
+
+# Dummy emails:
+dummy_emails/
+
+# Connect files:
+*connect*
+transfer_wp-config_to_aws.sh
+transfer_config_to_s3.sh
+transfer_plugin.sh
+
+# Config files
+wp-config.local.php
+wp-config.php
+config.sh
+wolfskill_config.sh
+configure_wp_secrets.sh
+configure_db.sh
+configure_tables.sh
+
+# Misc
+wp_salts
+create_superuser
+deploy_via_boto.py
+#.htaccess
+
+
+#Cloudformation Template
+.template
